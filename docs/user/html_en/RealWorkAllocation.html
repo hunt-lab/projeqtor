@@ -1,0 +1,532 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Real work allocation &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Documents" href="Document.html" />
+    <link rel="prev" title="Reports" href="Report.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Document.html" title="Documents"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Report.html" title="Reports"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="real-work-allocation">
+<span id="rwa"></span><span id="index-0"></span><h1>Real work allocation<a class="headerlink" href="#real-work-allocation" title="Permalink to this headline">¶</a></h1>
+<p>This screen is devoted to input of real work.</p>
+<p>The resource informs his work day by day, for each assigned task.</p>
+<p>Data entry for one resource, on a weekly base.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The corresponding cost to the real work is automatically updated to the assignment, activity and project.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Global parameter - Number of hours per day</strong></p>
+<ul class="simple">
+<li><p>In global parameters screen, you can define wether work will be entered in hours or in days.</p></li>
+<li><p>If you enter work in hours, you must define  the parameter <strong>number of hours per day</strong> before some real work has been entered.</p></li>
+<li><p>After first work is entered, this parameter will be locked.</p></li>
+</ul>
+<p><strong>see:</strong> <a class="reference internal" href="GlobalParameters.html#work-time"><span class="std std-ref">Global Parameters</span></a></p>
+</div>
+<div class="figure align-center" id="id1">
+<img alt="Timesheet zone screen" src="_images/REALWORK_SCR_TimeSheetZone2.png" />
+<p class="caption"><span class="caption-text">Timesheet zone screen</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> Selection timesheet</p>
+<ul class="simple">
+<li><p>Allows to select a timesheet for a resource and for a period.</p></li>
+<li><p>More detail about selection timesheet, see : <a class="reference internal" href="#selectiontimesheet-section"><span class="std std-ref">Selection timesheet</span></a>.</p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> Show planned work</p>
+<ul class="simple">
+<li><p>Check this box to display the planned work.</p></li>
+<li><p>Planned work is indicated over each input cell, on top left corner, in light blue color.</p></li>
+<li><p>Allows to display the planned working time by day, for the resource assigned to the task.</p></li>
+</ul>
+<div class="figure align-center" id="id2">
+<img alt="Planned work displayed zone" src="_images/REALWORK_ZONE_WithPlannedWork2.png" />
+<p class="caption"><span class="caption-text">Planned work displayed zone</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The planned work will be deleted if the real work is entered instead of planned work (to avoid duplication of work in reports) to see it you have to refresh the screen.</p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> Filters</p>
+<p>Filters allow to define the list of assigned tasks displayed.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first"><strong>Show only current week meeting</strong></p>
+<ul class="compound-last simple">
+<li><p>Check this box  to show only the tasks on meetings of the week.</p></li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Hide not handled items</strong></p>
+<ul class="compound-last simple">
+<li><p>Check this box to hide tasks not taken over.</p></li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Hide done items</strong></p>
+<ul class="compound-last simple">
+<li><p>Check this box to hide completed tasks.</p></li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Show closed items</strong></p>
+<blockquote class="compound-middle">
+<div><ul class="simple">
+<li><p>Check this box to show closed tasks.</p></li>
+</ul>
+</div></blockquote>
+<div class="compound-last compound">
+<p><strong>Show ID</strong></p>
+</div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Show ID to identify all single task.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Global parameter - “Display only handled tasks”</strong></p>
+<p>If the value of the parameter is set to “Yes”, only tasks taken over (status “handled”) will be displayed.</p>
+<p>The checkbox “Hide not handled items” will be hidden.</p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a> Buttons</p>
+<p>Buttons of the timesheet:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button icon save" src="_images/buttonIconSave.png" /> to save timesheet data.</p></li>
+<li><p>Click on <img alt="icon print button" src="_images/buttonIconPrint.png" /> to print timesheet.</p></li>
+<li><p>Click on <img alt="icon PDF button" src="_images/buttonIconPdf.png" /> to export timesheet in PDF format.</p></li>
+<li><p>Click on <img alt="Button icon CSV" src="_images/buttonIconCSV.png" /> to export timesheet in CSV format.</p></li>
+<li><p>Click on <img alt="button icon undo" src="_images/buttonIconUndo.png" /> to undo modification on the timesheet.</p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a> Data entry validation</p>
+<img alt="_images/Button_Timesheet_EnterRealWork.png" src="_images/Button_Timesheet_EnterRealWork.png" />
+<ul class="simple">
+<li><p>To enter automatically  the work as it is planned</p></li>
+</ul>
+<img alt="_images/Button_Timesheet_SubmitWork.png" src="_images/Button_Timesheet_SubmitWork.png" />
+<ul class="simple">
+<li><p>Buttons allow to send and validate real work.</p></li>
+<li><p>Displayed if mandatory</p></li>
+<li><p>Users can send works to project leader.</p></li>
+</ul>
+<img alt="_images/Button_Timesheet_ValidateWork.png" src="_images/Button_Timesheet_ValidateWork.png" />
+<ul class="simple">
+<li><p>Project leaders can validate works.</p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a> Scroll bar</p>
+<ul class="simple">
+<li><p>Scroll bar allows the scrolling on imputation lines.</p></li>
+<li><p>The header of table stays visible.</p></li>
+<li><p>The footer of the table (with the sum of inputs) remains visible, fixed, as soon as the number of lines is greater than 20.</p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/seven.png"><img alt="Seven" src="_images/seven.png" style="width: 18.0px; height: 18.0px;" /></a> Input fields</p>
+<ul class="simple">
+<li><p>Input fields in timesheet.</p></li>
+<li><p>More detail about, see : <a class="reference internal" href="#inputfields-section"><span class="std std-ref">Input fields</span></a></p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/eight.png"><img alt="Eight" src="_images/eight.png" style="width: 18.0px; height: 18.0px;" /></a> Tasks list</p>
+<div class="figure align-center" id="id3">
+<img alt="Task list zone" src="_images/REALWORK_ZONE_IMPUTATION2.png" />
+<p class="caption"><span class="caption-text">Task list zone</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/A.png"><img alt="A letter" src="_images/A.png" style="width: 17.4px; height: 17.4px;" /></a> <strong>Tasks</strong></p>
+<div class="compound">
+<p><strong>The list displays the assigned tasks for the resource.</strong></p>
+</div>
+<ul class="simple">
+<li><p>Only assigned tasks that meet the next criteria will be displayed.</p>
+<ul>
+<li><p>Assigned tasks planned during this period.</p></li>
+<li><p>Assigned tasks that meet the criteria of selected filters.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Assigned tasks with real work are always displayed, even if closed.</p></li>
+<li><p>The goal is to show all lines of the sum for each column, to be able to check that the week is completely entered.</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Assigned tasks are grouped by project and displayed according the project structure.</p></li>
+<li><p>Click on the name of the activity to access it.</p></li>
+<li><p>Click on <img alt="minus button" src="_images/minusButton.png" /> or <img alt="plus button" src="_images/plusButton.png" /> on the line will expand-shrink the group.</p></li>
+<li><p>Click on the icon of the activity to display it detail without leaving the current screen.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The comments <img alt="Note" src="_images/note.png" /></p>
+<p>fly over the icon with the mouse to see the comment</p>
+<div class="figure align-center">
+<img alt="_images/REALWORK_BOX_Timesheet_ViewComment.PNG" src="_images/REALWORK_BOX_Timesheet_ViewComment.PNG" />
+</div>
+<ul class="simple">
+<li><p>Click on the icon to open windows view comments</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="" src="_images/REALWORK_BOX_leftclickNote.png" />
+</div>
+</div>
+<div class="compound">
+<p><a class="reference internal" href="_images/D.png"><img alt="D letter" src="_images/D.png" style="width: 17.4px; height: 17.4px;" /></a> <strong>Imput fields</strong></p>
+</div>
+<p>Each day, for each task, an input field allows you to enter your actual work.</p>
+<p>The column of the day is highlighted with a yellow background</p>
+<p>see: <a class="reference internal" href="#inputfields-section"><span class="std std-ref">Input fields</span></a></p>
+<p>In order to see and know the assignment times on a task, several columns indicate the periods that are assigned to a resource</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Planned dates</strong>: Planned start and end dates.</p></li>
+<li><p><strong>Assigned</strong>: Planned work assigned to the resource.</p></li>
+<li><p><strong>Real</strong>: Sum of work done by the resource.</p></li>
+<li><p><strong>Left</strong>: The remaining planned work.</p></li>
+<li><p><strong>Reassessed</strong>: The work needed to complete the task.</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/REALWORK_ZONE_RowsTime.png"><img alt="_images/REALWORK_ZONE_RowsTime.png" src="_images/REALWORK_ZONE_RowsTime.png" style="width: 420.0px; height: 107.39999999999999px;" /></a>
+</div>
+<p><strong>Total of days</strong></p>
+<p>On the last column is the sum for all days of the week.</p>
+<p>It is a synthesis displayed for each project and globally for the whole week.</p>
+<div class="figure align-center" id="id4">
+<img alt="Total of the day" src="_images/REALWORK_ZONE_TimesheetTotalDay.PNG" />
+<p class="caption"><span class="caption-text">Total of the day Zone</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="selection-timesheet">
+<span id="selectiontimesheet-section"></span><h2>Selection timesheet<a class="headerlink" href="#selection-timesheet" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id5">
+<img alt="Timesheet selector zone" src="_images/REALWORK_ZONE_TimeSheetSelector.png" />
+<p class="caption"><span class="caption-text">Timesheet selector zone</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> Selection of the resource</p>
+<ul class="simple">
+<li><p>By default, users can only select themselves as a resource.</p></li>
+<li><p>Access to other resources timesheet depending on <a class="reference internal" href="AccessRights.html#specific-access"><span class="std std-ref">Specific access</span></a>, then user can select other resources timesheets.</p></li>
+<li><p>Clicking on the checkbox below allows to select only resources allocated to the selected project on the list roll displayed.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="Limit list of resources" src="_images/REALWORK_ZONE_Timesheet_LimitList.PNG" />
+</div>
+<p class="rubric"><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> Selection period</p>
+<ul class="simple">
+<li><p>By default, the period is determined depending on the current day.</p></li>
+<li><p>It is possible to change the period of two ways:</p>
+<ul>
+<li><p>Select year and week <a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+<li><p>Or select the first day of the week <a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+<li><p>Or click on the <strong>Today</strong> button to return to the current week</p></li>
+</ul>
+</li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a> Displayed timesheet</p>
+<ul class="simple">
+<li><p>A timesheet is displayed depends on the resource and period selection.</p></li>
+<li><p>The name of the resource and the week are displayed. <a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+<li><p>The days of the week are displayed. <a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+<li><p>The current day is displayed. <a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+</ul>
+</div>
+<div class="section" id="input-fields">
+<span id="inputfields-section"></span><h2>Input fields<a class="headerlink" href="#input-fields" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id6">
+<img alt="Input timesheet zone" src="_images/REALWORK_ZONE_InputTimesheet.png" />
+<p class="caption"><span class="caption-text">Input timesheet zone</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> Comments</p>
+<ul class="simple">
+<li><p>A global comment can be added on the weekly follow-up.</p></li>
+<li><p>Possibility to extend the main comment area.</p></li>
+<li><p>Can enter a comment on each line of real work allocation screen.</p></li>
+</ul>
+<p class="rubric"><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> Real work entry</p>
+<ul class="simple">
+<li><p>Area to enter real work.</p></li>
+<li><p>Week is displayed from monday to sunday.</p></li>
+<li><p>It possible put real work in off days.</p></li>
+</ul>
+<div class="topic">
+<p class="topic-title first"><strong>Unit time of real work data entry</strong></p>
+<ul class="simple">
+<li><p>The global parameter <strong>Unit for real work allocation</strong> into Work Time tab allows to set the unit time.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="_images/GLOBALPARAM_WorkTime_UnitsWorks.png" src="_images/GLOBALPARAM_WorkTime_UnitsWorks.png" />
+</div>
+<ul class="simple">
+<li><p>unit for Timesheet (real work) : available are in “Days” or “Hours”.</p></li>
+<li><p>Selected unit time is displayed on left at bottom window. <a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a></p></li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Current day</strong></p>
+<ul class="compound-last simple">
+<li><p>Columns of current day is displayed in yellow.</p></li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Days off</strong></p>
+<ul class="compound-last simple">
+<li><p>Columns of days off is displayed in grey.</p></li>
+<li><p>Days off is determine in resource calendar definition, see: <a class="reference internal" href="Resource.html#calendars"><span class="std std-ref">Calendars</span></a>.</p></li>
+</ul>
+</div>
+<p class="rubric"><a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> Left work</p>
+<ul class="simple">
+<li><p>Left work is automatically decreased on input of real work.</p></li>
+<li><p>Resources can adjust this value to estimate the work needed to complete the task.</p></li>
+</ul>
+</div>
+<div class="section" id="input-entry-validation">
+<h2>Input entry validation<a class="headerlink" href="#input-entry-validation" title="Permalink to this headline">¶</a></h2>
+<p>This section explains controls done on data entries.</p>
+<ul class="simple">
+<li><p>These controls are not blocking.</p></li>
+<li><p>yellow background : Enhancement of data entered</p></li>
+</ul>
+<p class="rubric">Resource capacity validation</p>
+<ul class="simple">
+<li><p>The total of the day is green whether entries respects the resource capacity of days.</p></li>
+<li><p>The total of the day is red whether entries is more than the resource capacity of days.</p></li>
+</ul>
+<div class="topic">
+<p class="topic-title first">Resource capacity of days</p>
+<ul class="simple">
+<li><p>The resource capacity is defined by the number of hours per day and the resource capacity.</p></li>
+<li><p>The number of hours per day is defined on <a class="reference internal" href="GlobalParameters.html#unitforwork-section"><span class="std std-ref">Global parameters</span></a> screen.</p></li>
+<li><p>The capacity of the resource is defined on <a class="reference internal" href="Resource.html#resource"><span class="std std-ref">Resources</span></a> screen.</p></li>
+</ul>
+</div>
+<div class="figure align-center" id="id7">
+<img alt="Columns validation zone" src="_images/REALWORK_ZONE_WithColumnsValidation.png" />
+<p class="caption"><span class="caption-text">Columns validation zone</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric">Entering real work is in excess of the number of days specified</p>
+<ul class="simple">
+<li><p>This alert box appears when the real work to a resource is entering ahead of time.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="_images/REALWORK_ALERT_RealWorkBlocked.png" src="_images/REALWORK_ALERT_RealWorkBlocked.png" />
+</div>
+<ul class="simple">
+<li><p>Resource can enter his real work is defined in “max days to book work” parameter in <a class="reference internal" href="GlobalParameters.html#unitforwork-section"><span class="std std-ref">Global parameters</span></a> screen.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="Real work over expected days alert" src="_images/GLOBALPARAM_WorkTime_Timesheet.png" />
+</div>
+</div>
+<div class="section" id="the-status-of-tasks">
+<h2>The status of tasks<a class="headerlink" href="#the-status-of-tasks" title="Permalink to this headline">¶</a></h2>
+<p>The task status can be changed automatically according to data entries on real work and left work.</p>
+<p class="rubric">Global parameter “Set to first ‘handled’ status”</p>
+<ul class="simple">
+<li><p>If the parameter value is set to “Yes”, when real work is entered on a task, its status will be changed automatically to the first status “handled”.</p></li>
+</ul>
+<p class="rubric">Global parameter “Set to first ‘done’ status”</p>
+<ul class="simple">
+<li><p>If the parameter value is set to “Yes”, when left work is set to zero on a task, its status will be changed automatically to the first status “done”.</p></li>
+</ul>
+<p class="rubric">Change status validation</p>
+<ul class="simple">
+<li><p>An icon will be displayed on the task if a status change is applicable.</p></li>
+</ul>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first"><strong>Icons</strong></p>
+<ul class="compound-middle simple">
+<li><p><img alt="Status start" src="_images/statusStart.png" /> Due to real work is entered, the task status will be changed to the first ‘handled’ status.</p></li>
+<li><p><img alt="Status start KO" src="_images/statusStartKO.png" /> The real work is entered, but the task status will not change because at issue is occurring.</p></li>
+<li><p><img alt="Status finish" src="_images/statusFinish.png" /> Due to no more left work, the task status will be changed to the first ‘done’ status.</p></li>
+<li><p><img alt="Status finish KO" src="_images/statusFinishKO.png" /> No more left work, but the task status will not change because at issue is occurring.</p></li>
+</ul>
+<div class="compound-last admonition note">
+<p class="admonition-title">Note</p>
+<p>Move the cursor over the icon to see the message.</p>
+</div>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Common issue</strong></p>
+<ul class="compound-last simple">
+<li><p>If a <a class="reference internal" href="Glossary.html#term-responsible"><span class="xref std std-term">responsible</span></a> or a <a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">result</span></a> are set as mandatory in element type definition for the task. It’s impossible to set those values by real work allocation screen.</p></li>
+<li><p>The change status must be done in treatment section on the task definition screen.</p></li>
+</ul>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="timesheet-validation">
+<h2>Timesheet Validation<a class="headerlink" href="#timesheet-validation" title="Permalink to this headline">¶</a></h2>
+<p>The timesheet validation screen allows the project leader to receive,</p>
+<p>check and validate the time charged by the resources on an activity.</p>
+<div class="figure align-center">
+<img alt="_images/REALWORK_ZONE_TimesheetValidation.png" src="_images/REALWORK_ZONE_TimesheetValidation.png" />
+</div>
+<table class="colwidths-given docutils align-center" id="id8">
+<caption><span class="caption-text">Fields - Timesheet validation</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Resource</p></td>
+<td><p>resource name, owner of the posting sheet</p></td>
+</tr>
+<tr class="row-odd"><td><p>Week</p></td>
+<td><p>dates of the imputed period - One shipment per week</p></td>
+</tr>
+<tr class="row-even"><td><p>Expected</p></td>
+<td><p>Expected work for the resource</p></td>
+</tr>
+<tr class="row-odd"><td><p>Operational work</p></td>
+<td><p>work actually done for the resource</p></td>
+</tr>
+<tr class="row-even"><td><p>Administrative work</p></td>
+<td><p>period of leave/sickness/absence</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sum</p></td>
+<td><p>total days of resources over the period indicated</p></td>
+</tr>
+<tr class="row-even"><td><p>Timesheet submitted</p></td>
+<td><p>Date the timesheet was sent by the resource</p></td>
+</tr>
+<tr class="row-odd"><td><p>Timesheet validation</p></td>
+<td><p>project learder placeholder to validate or invalidate timesheet</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Color code</strong></p>
+<p>According to the work completed by the resource, and according to the expected workload for this resource,</p>
+<p>the PL receives the timesheet with a precise color code</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Green:</strong> The completed job is the same as the expected one</p></li>
+<li><p><strong>Red:</strong> The filled workload is shorter. It does not match the expected work</p></li>
+<li><p><strong>Orange:</strong> the job is not the same as the expected job but the load is the same</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="automatic-input-of-work">
+<span id="automatic-inuptwork"></span><h2>Automatic input of work<a class="headerlink" href="#automatic-input-of-work" title="Permalink to this headline">¶</a></h2>
+<p>The goal is to be able to automatically inform the real from the planned, until a given date, then trigger the automatic calculation of the projects from the day after that date.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>However, it will be necessary to ensure that the automatic capture of the real does not come superimposed on an actual seizure of real work by a resource, which would indicate in this way having worked differently from what had been planned.</p>
+</div>
+<p>A parameter “automatic feed of the real” has been added on the setting of the complete automatic calculation.</p>
+<p>If the parameter “Automatic feed of the real” is selected, when the calculation is triggered, the actual work is automatically entered from the planned work until the day before the start of the calculation of the schedule.</p>
+<p>For security, and to avoid the superposition with a manual entry of real, if the resource has real for a given date, one does not copy the possible planned existing in real.</p>
+<p>For each planned job found, if no job exists for the resource concerned on the date of the scheduled job, copies the planned job to real work.</p>
+<p>We will mark the actual work entered automatically (technical zone type tag) to distinguish the automatic feed from a manual feed. This area will not be processed for screen renditions, but will analyze any unexpected behavior.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Real work allocation</a><ul>
+<li><a class="reference internal" href="#selection-timesheet">Selection timesheet</a></li>
+<li><a class="reference internal" href="#input-fields">Input fields</a></li>
+<li><a class="reference internal" href="#input-entry-validation">Input entry validation</a></li>
+<li><a class="reference internal" href="#the-status-of-tasks">The status of tasks</a></li>
+<li><a class="reference internal" href="#timesheet-validation">Timesheet Validation</a></li>
+<li><a class="reference internal" href="#automatic-input-of-work">Automatic input of work</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Report.html"
+                        title="previous chapter">Reports</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Document.html"
+                        title="next chapter">Documents</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Document.html" title="Documents"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Report.html" title="Reports"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

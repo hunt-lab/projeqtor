@@ -1,0 +1,833 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Requirements and Tests &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Requirements dashboard" href="RequirementsDashBoard.html" />
+    <link rel="prev" title="Tickets dashboard" href="TicketDashBoard.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RequirementsDashBoard.html" title="Requirements dashboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="TicketDashBoard.html" title="Tickets dashboard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="requirements">
+<span id="requirement"></span><span id="index-0"></span><h1>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="sidebar-title">Concepts</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="Concept.html#product-concept"><span class="std std-ref">Product</span></a></p></li>
+</ul>
+</div>
+<p>Requirement is a rule defined for a project or a product.</p>
+<p>In most IT projects, requirement can be a functional rule for a software.</p>
+<p>It allows to define and monitor cost and delays.</p>
+<p>It can be linked to test cases, it’s used to describe how you will test that a given requirement.</p>
+<p class="rubric">Rights management</p>
+<ul class="simple">
+<li><p>Linking requirements to a project will limit the visibility, respecting rights management at project level.</p></li>
+</ul>
+<p class="rubric">Requirement link to test cases</p>
+<ul class="simple">
+<li><p>Test cases can be linked to a requirement in <strong>linked element section</strong>.</p></li>
+<li><p>Linking a requirement to a test case will display a summary of test case run (defined in test session).</p></li>
+<li><p>This way, you will have an instant display of test coverage for the requirement.</p></li>
+</ul>
+<p class="rubric">Requirement link to tickets</p>
+<ul class="simple">
+<li><p>When test case run status is set to <strong>failed</strong>, the reference to a ticket must be defined (reference to the incident).</p></li>
+<li><p>When the requirement is linked to a test case with this run status, ticket is automatically linked to the requirement.</p></li>
+</ul>
+<p class="rubric">Predecessor and successor elements</p>
+<ul class="simple">
+<li><p>Requirements can have predecessors and successors.</p></li>
+<li><p>This defines some dependencies on the requirements.</p></li>
+<li><p>The dependencies don’t have specific effects. It is just an information.</p></li>
+</ul>
+<p class="rubric">Monitoring indicator</p>
+<ul>
+<li><p>Possibility to define indicators to follow the respect of dates values.</p>
+<dl class="describe">
+<dt>
+<code class="descname">Respect of initial due date</code></dt>
+<dd></dd></dl>
+
+<dl class="describe">
+<dt>
+<code class="descname">Respect of planned due date</code></dt>
+<dd></dd></dl>
+
+</li>
+</ul>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#summary-test-case-section"><span class="std std-ref">Summary of test cases</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#predsuces-element-section"><span class="std std-ref">Predecessor and Sucessor</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#linkelement-section"><span class="std std-ref">Linked element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<p class="rubric">Section  Description</p>
+<table class="colwidths-given docutils align-center" id="id1">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the requirement</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Requirement type</p></td>
+<td><p>Type of requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>The project concerned by the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p>Product</p></td>
+<td><p>The product concerned by the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></p></td>
+<td><p>External reference for the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-requestor"><span class="xref std std-term">Requestor</span></a></p></td>
+<td><p>Contact who requested the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></p></td>
+<td><p>Element which is the origin of the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p>Urgency</p></td>
+<td><p>Urgency of implementation of the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Initial due date</p></td>
+<td><p>Initial due date.</p></td>
+</tr>
+<tr class="row-even"><td><p>Planned due date</p></td>
+<td><p>Planned due date.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Description</p></td>
+<td><p>Long <a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">description</span></a> of the requirement.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Project and Product</p>
+<ul class="simple">
+<li><p>Must be concerned either with a project, a product or both.</p></li>
+<li><p>If the project is specified, the list of values for field “Product” contains only products linked the selected project.</p></li>
+</ul>
+</div>
+<p class="rubric">Section  Treatment</p>
+<table class="colwidths-given docutils align-center" id="id2">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Top requirement</p></td>
+<td><p>Parent requirement, defining a hierarchic structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-responsible"><span class="xref std std-term">Responsible</span></a></p></td>
+<td><p>Resource who is responsible for the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Criticality</p></td>
+<td><p>Level of criticality of the requirement for the product.</p></td>
+</tr>
+<tr class="row-even"><td><p>Feasibility</p></td>
+<td><p>Result of first analysis to check the feasibility of the implementation of the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Technical risk</p></td>
+<td><p>Result of first analysis to measure the technical risk of the implementation of the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p>Estimated effort</p></td>
+<td><p>Result of first analysis to measure the estimated effort of the implementation of the requirement.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates the requirement is taken over.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates the requirement has been treated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates the requirement is archived.</p></td>
+</tr>
+<tr class="row-even"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates the requirement is cancelled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Target version</p></td>
+<td><p>Version of the product for which this requirement will be active.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></p></td>
+<td><p>Description of the implementation of the requirement.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Target version</p>
+<p>Contains the list of product versions available according to the project and product selected.</p>
+</div>
+<p class="rubric">Section  Lock</p>
+<p>A requirement can be locked to ensure that its definition has not changed during the implementation process.</p>
+<blockquote>
+<div><p><strong>Button: Lock/Unlock requirement</strong></p>
+<ul class="simple">
+<li><p>Button to lock or unlock the requirement to preserve it from being changed.</p></li>
+<li><p>Only the user who locked the requirement or a habilitated user can unlock a requirement.</p></li>
+</ul>
+<p><strong>Requirement locked</strong></p>
+<ul class="simple">
+<li><p>When a requirement is locked the following fields are displayed.</p></li>
+</ul>
+</div></blockquote>
+<table class="colwidths-given docutils align-center" id="id3">
+<caption><span class="caption-text">Fields when the requirement is locked</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Locked</p></td>
+<td><p>Box checked indicates the requirement is locked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Locked by</p></td>
+<td><p>User who locked the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p>Locked since</p></td>
+<td><p>Date and time when the requirement was locked.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="test-cases">
+<span id="test-case"></span><span id="index-1"></span><h1>Test cases<a class="headerlink" href="#test-cases" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="sidebar-title">Concepts</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="Concept.html#product-concept"><span class="std std-ref">Product</span></a></p></li>
+</ul>
+</div>
+<p>Test cases are elementary actions executed to test a requirement.</p>
+<p>You may define several tests to check a requirement, or check several requirements with one test.</p>
+<p>The test case is defined for a project, a product or one these components.</p>
+<p class="rubric" id="test-case-run-status"><span id="index-2"></span>Test case run status</p>
+<ul class="simple">
+<li><p><img alt="Icon planned" src="_images/iconPlanned.png" /> <strong>Planned:</strong> Test to be executed.</p></li>
+<li><p><img alt="Icon passed" src="_images/iconPassed.png" /> <strong>Passed:</strong> Test passed with success (result is conform to expected result).</p></li>
+<li><p><img alt="Icon blocked" src="_images/iconBlocked.png" /> <strong>Blocked:</strong> Impossible to run the test because of a prior incident  (blocking incident or incident on preceding test) or missing prerequisite.</p></li>
+<li><p><img alt="Icon failed" src="_images/iconFailed.png" /> <strong>Failed:</strong> Test has returned wrong result.</p></li>
+</ul>
+<p class="rubric">Rights management</p>
+<ul class="simple">
+<li><p>Linking test case to a project will limit the visibility, respecting rights management at project level.</p></li>
+</ul>
+<p class="rubric">Predecessor and successor elements</p>
+<ul class="simple">
+<li><p>Test case can have predecessors and successors.</p></li>
+<li><p>This defines some dependencies on the test case.</p></li>
+<li><p>Dependencies don’t have specific effects. It is just an information.</p></li>
+</ul>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="CommonSections.html#predsuces-element-section"><span class="std std-ref">Predecessor and Sucessor element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#linkelement-section"><span class="std std-ref">Linked element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the test case.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Test type</p></td>
+<td><p>Type of test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>The project concerned by the test case.</p></td>
+</tr>
+<tr class="row-even"><td><p>Product</p></td>
+<td><p>The product concerned by the test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Version</p></td>
+<td><p>Version of the product or component concerned by the test case.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></p></td>
+<td><p>External reference for the test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Environment</p></td>
+<td><p>List of 3 items describing the context of the test case.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Description</p></td>
+<td><p>Complete <a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">description</span></a> of the test case.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Project and Product</p>
+<ul class="simple">
+<li><p>Must be concerned either with a project, a product or both.</p></li>
+<li><p>If the project is specified, the list of values for field “Product” contains only products linked the selected project.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Version</p>
+<ul class="simple">
+<li><p>Contains the list of product and component versions available according to the project and product selected.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Environment (Context)</p>
+<ul class="simple">
+<li><p>Contexts are initialized for IT Projects as “Environment”, “OS” and “Browser”.</p></li>
+<li><p>This can be easily changed values in <a class="reference internal" href="Concept.html#context"><span class="std std-ref">Contexts</span></a> screen.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Description</p>
+<ul class="simple">
+<li><p>The description of test case should describe the steps to run the test.</p></li>
+</ul>
+</div>
+<p class="rubric">Section  Treatment</p>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Parent test case</p></td>
+<td><p>Parent test case, defining a hierarchic structure for test cases.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the requirement.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-responsible"><span class="xref std std-term">Responsible</span></a></p></td>
+<td><p>Resource who is responsible of the test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Priority</p></td>
+<td><p>Level of priority for the test case.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates the test case is taken over.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates the test case has been treated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates the test case is archived.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates the test case is cancelled.</p></td>
+</tr>
+<tr class="row-even"><td><p>Prerequisite</p></td>
+<td><p>List of steps that must be performed before running the test.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Expected result</span></a></p></td>
+<td><p>Description of expected result of the test.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Prerequisite</p>
+<p>If left blank and test case has a parent, parent prerequisite will automatically be copied here.</p>
+</div>
+<p class="rubric">Section  Test case runs</p>
+<ul class="simple">
+<li><p>This section allows to display a complete list of test case runs.</p></li>
+<li><p>These are links of the test to test sessions.</p></li>
+<li><p>This list also displays the current status of the test in the sessions.</p></li>
+</ul>
+<div class="topic">
+<p class="topic-title first">Field Summary</p>
+<ul class="simple">
+<li><p>An icon whose presents the run status of the test case.</p></li>
+<li><p>For detail, see: <a class="reference internal" href="#summary-test-case-run-status"><span class="std std-ref">Summary of test case run status</span></a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To go, click on the corresponding test session.</p>
+</div>
+<table class="colwidths-given docutils align-center" id="id4">
+<caption><span class="caption-text">Fields - Test case runs list</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test session</p></td>
+<td><p>Composed of session type, Id and description.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><p>Current status of the test case run in the test session.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="test-sessions">
+<span id="test-session"></span><span id="index-3"></span><h1>Test sessions<a class="headerlink" href="#test-sessions" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="sidebar-title">Concepts</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="Concept.html#product-concept"><span class="std std-ref">Product</span></a></p></li>
+</ul>
+</div>
+<p>A test session defines all the tests to be executed to reach a given target.</p>
+<p>Define in the test case runs all test cases will be running to this test session.</p>
+<p>For each test case run sets the status of test results. (See: <a class="reference internal" href="#test-case-run-status"><span class="std std-ref">Test case run status</span></a>)</p>
+<p>The test session is defined for a project, a product or one these components.</p>
+<p class="rubric">Rights management</p>
+<ul class="simple">
+<li><p>Linking test session to a project will limit the visibility, respecting rights management at project level.</p></li>
+</ul>
+<p class="rubric">Test sessions regroupment</p>
+<ul class="simple">
+<li><p>Test session can have parents to regroup test sessions.</p></li>
+</ul>
+<p class="rubric">Planning element</p>
+<ul class="simple">
+<li><p>A test session is a planning element like activity.</p></li>
+<li><p>A test session is a task in a project planning.</p></li>
+<li><p>Allows to assigned resource and follow up progress.</p></li>
+</ul>
+<p class="rubric">Predecessor and successor elements</p>
+<ul class="simple">
+<li><p>Test sessions can have predecessors and successors.</p></li>
+<li><p>This defines some dependencies on test cases or planning constraints.</p></li>
+</ul>
+<p class="rubric">Monitoring indicator</p>
+<ul class="simple">
+<li><p>The indicators can be defined on the progress data.</p></li>
+<li><p>See: <a class="reference internal" href="CommonSections.html#progress-section-monitor-indicator"><span class="std std-ref">Monitoring indicator</span></a></p></li>
+</ul>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="CommonSections.html#assignment-section"><span class="std std-ref">Assignment</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#progress-section-activity"><span class="std std-ref">Progress</span></a></p></li>
+<li><p><a class="reference internal" href="#summary-test-case-section"><span class="std std-ref">Summary of test cases</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#predsuces-element-section"><span class="std std-ref">Predecessor and Sucessor element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#linkelement-section"><span class="std std-ref">Linked element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the test session.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the test session.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Session type</p></td>
+<td><p>Type of test session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>The project concerned by the test session.</p></td>
+</tr>
+<tr class="row-even"><td><p>Product</p></td>
+<td><p>The product concerned by the test session.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Version</p></td>
+<td><p>Version of the product or component concerned by the test session.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></p></td>
+<td><p>External reference for the test session.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></p></td>
+<td><p>Complete description of the test session.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Project and Product</p>
+<ul class="simple">
+<li><p>Must be concerned either with a project, a product or both.</p></li>
+<li><p>If the project is specified, the list of values for field “Product” contains only products linked the selected project.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Version</p>
+<ul class="simple">
+<li><p>Contains the list of product and component versions available according to the project and product selected.</p></li>
+</ul>
+</div>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Parent activity</p></td>
+<td><p>Parent activity, to define hierarchic position in the Gantt.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Parent session</p></td>
+<td><p>Parent session, to define session of sessions.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the test session.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-responsible"><span class="xref std std-term">Responsible</span></a></p></td>
+<td><p>Resource who is responsible of the test session.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates the test session is taken over.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates the test session has been treated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates the test session is archived.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates the test session is cancelled.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></p></td>
+<td><p>Summary result of the test session.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Test case runs</p>
+<p>This section allows to manage test case runs.</p>
+<table class="colwidths-given docutils align-center" id="id5">
+<caption><span class="caption-text">Fields - Test case runs list</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test case</p></td>
+<td><p>Information about test case (type, Id and name).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Detail</p></td>
+<td><p>Detail of test case.</p></td>
+</tr>
+<tr class="row-even"><td><p>Status</p></td>
+<td><p>Status of test case run.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Test case</p>
+<ul class="simple">
+<li><p>This icon <img alt="Note" src="_images/note.png" /> appears when the test case run comment field is filled.</p></li>
+<li><p>Moving the mouse over the icon will display the test case run comments.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Detail</p>
+<ul class="simple">
+<li><p>Moving the mouse over the icon <img alt="Icon description" src="_images/description.png" /> will display the test case description.</p></li>
+<li><p>Moving the mouse over the icon <img alt="Icon result" src="_images/result.png" /> will display the test case expected result.</p></li>
+<li><p>Moving the mouse over the icon <img alt="Icon prerequisite" src="_images/prerequisite.png" /> will display the test case prerequisite.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Status</p>
+<ul class="simple">
+<li><p>If status of test case run is <strong>failed</strong>, information about selected ticket is displayed too.</p></li>
+</ul>
+</div>
+<p class="rubric">Test case runs list management</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button add" src="_images/ButtonAdd.png" /> to add a test case run. The <strong>Test case run dialog box</strong> will be appear.</p></li>
+<li><p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to edit a test case run. The <strong>Test case run detail dialog box</strong> will be appear.</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to remove a test case run.</p></li>
+<li><p>Click on <img alt="Icon passed" src="_images/iconPassed.png" /> to mark test case run as passed.</p></li>
+<li><p>Click on <img alt="Icon failed" src="_images/iconFailed.png" /> to mark test case run as failed. The <strong>Test case run detail dialog box</strong> will be appear.</p></li>
+<li><p>Click on <img alt="Icon blocked" src="_images/iconBlocked.png" /> to mark test case run as blocked.</p></li>
+</ul>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>When status is set to failed, the reference to a ticket must be defined (reference to the incident).</p></li>
+<li><p>The referenced ticket is automatically added in linked element.</p></li>
+</ul>
+</div>
+</div></blockquote>
+<div class="figure align-center" id="id6">
+<img alt="Dialog box - Test case run" src="_images/REQUIREMENT_BOX_TestCaseRun.png" />
+<p class="caption"><span class="caption-text">Dialog box - Test case run</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id7">
+<caption><span class="caption-text">Fields - Test case run dialog box</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test cases</p></td>
+<td><p>Test cases list.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Allow duplicate</p></td>
+<td><p>Check the box, if you allow this test case can be used more than once in a test session.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center" id="id8">
+<img alt="Diaglog box - Test case run detail" src="_images/REQUIREMENT_BOX_TestCaseRunDetail.png" />
+<p class="caption"><span class="caption-text">Diaglog box - Test case run detail</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id9">
+<caption><span class="caption-text">Fields - Test case run detail dialog box</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test case</p></td>
+<td><p>Selected test case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><p>List of <a class="reference internal" href="#test-case-run-status"><span class="std std-ref">test case run status</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Ticket</p></td>
+<td><p>List of ticket.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Comments</p></td>
+<td><p>Comments of test case run.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Ticket</p>
+<p>Field appear only whether status of test case run is <strong>failed</strong>.</p>
+</div>
+</div>
+<div class="section" id="summary-of-test-cases-section">
+<span id="summary-test-case-section"></span><h1>Summary of test cases section<a class="headerlink" href="#summary-of-test-cases-section" title="Permalink to this headline">¶</a></h1>
+<p>This section summarizes the status of test case runs to requirement and test session.</p>
+<p class="rubric">Requirement</p>
+<p>Summarizes the status of test case runs for test cases are linked to the requirement.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Field Total</p>
+<p>Because a test case can be linked to several test sessions, total can be greater than linked to the requirement.</p>
+</div>
+</div></blockquote>
+<p class="rubric">Test session</p>
+<p>Summarizes the status of test case runs in the test session.</p>
+<hr class="docutils" />
+<p class="rubric" id="summary-test-case-run-status">Summary of test case run status</p>
+<ul class="simple">
+<li><p><img alt="Icon not planned" src="_images/iconNotPlanned.png" /> <strong>Not planned:</strong>  No test case planned.</p></li>
+<li><p><img alt="Icon planned" src="_images/iconPlanned.png" /> <strong>Planned:</strong> No test failed or blocked, at least one test planned.</p></li>
+<li><p><img alt="Icon passed" src="_images/iconPassed.png" /> <strong>Passed:</strong> All tests passed.</p></li>
+<li><p><img alt="Icon failed" src="_images/iconFailed.png" /> <strong>Failed:</strong> At least one test failed.</p></li>
+<li><p><img alt="Icon blocked" src="_images/iconBlocked.png" /> <strong>Blocked:</strong> No test failed, at least one test blocked.</p></li>
+</ul>
+<hr class="docutils" />
+<table class="colwidths-given docutils align-center" id="id10">
+<caption><span class="caption-text">Fields - Summary of test cases</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Total</p></td>
+<td><p>Number of test case runs whatever the status.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Planned</p></td>
+<td><p>Number of test case runs with the status <strong>Planned</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Passed</p></td>
+<td><p>Number of test case runs with the status <strong>Passed</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Blocked</p></td>
+<td><p>Number of test case runs with the status <strong>Blocked</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Failed</p></td>
+<td><p>Number of test case runs with the status <strong>Failed</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Summary</p></td>
+<td><p>Summary of test case run status.</p></td>
+</tr>
+<tr class="row-even"><td><p>Issues</p></td>
+<td><p>Number of tickets linked to the requirement or the test session.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Percent to each status is displayed.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Requirements</a></li>
+<li><a class="reference internal" href="#test-cases">Test cases</a></li>
+<li><a class="reference internal" href="#test-sessions">Test sessions</a></li>
+<li><a class="reference internal" href="#summary-of-test-cases-section">Summary of test cases section</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="TicketDashBoard.html"
+                        title="previous chapter">Tickets dashboard</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RequirementsDashBoard.html"
+                        title="next chapter">Requirements dashboard</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RequirementsDashBoard.html" title="Requirements dashboard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="TicketDashBoard.html" title="Tickets dashboard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

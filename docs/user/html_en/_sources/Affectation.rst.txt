@@ -1,0 +1,64 @@
+.. raw:: latex
+
+    \newpage
+
+.. title:: Allocations
+
+.. index:: ! Allocations
+
+.. _allocation:
+
+Allocations
+***********
+
+
+.. sidebar:: Concepts 
+
+   * :ref:`allocation-to-project`
+   * :ref:`profiles-definition`
+   * :ref:`user-ress-contact-demystify`
+
+Allows to manage allocations to project.
+
+Offers a global view of allocation.
+
+.. figure:: /images/GUI/ENVPARAM_SCR_AllocationProject.png
+   :alt: Allocation to project
+   :align: center
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required Field
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the allocation.
+   * - Resource
+     - Name of the allocated resource.
+   * - Or contact
+     - Name of the allocated contact.
+   * - |RequiredField| Profile
+     - Selected profile.
+   * - |RequiredField| Project
+     - Project allocated to.
+   * - Rate
+     - Allocation rate for the project (%).
+   * - Start date
+     - Start date of allocation.
+   * - End date
+     - End date of allocation.
+   * - :term:`Closed`
+     - Flag to indicate that the allocation is archived.
+   * - :term:`Description`
+     - Complete description of the allocation.
+
+.. topic:: Fields Resource & Contact
+
+   * You can select resource or contact.
+   * If none is selected then the user connected is used to define the allocation.
+   * If a contact is a resource and inversely, then resource or contact name will be selected too.
+

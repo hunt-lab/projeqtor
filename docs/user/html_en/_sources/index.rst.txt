@@ -1,0 +1,351 @@
+.. include:: ImageReplacement.txt
+
+.. ProjeQtOr user guide documentation master file, created by
+   sphinx-quickstart on Fri May 29 11:17:53 2015.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+   
+.. _#:
+
+
+
+.. image:: /images/GUI/INDEX_ZONE_CouvManuel.png
+
+
+ProjeQtOr is an open source project management software that combines in one tool all the functionalities needed to organize your projects. It is simple, easy to use and covers a maximum of project management features.
+Its particularity, in addition to its completeness, is to be oriented towards quality. This means you can record all the events of your projects and thus simplify compliance with leading standards in quality management, be they ISO, CMMI, ITIL or other.
+
+.. raw:: latex
+
+    \newpage
+    
+What's new in version 8.3 ?
+---------------------------
+
+Find in this manual, every 3 months, the latest news integrated into ProjeQtOr   
+
+
+.. container:: 
+   
+   **Kanban**
+
+   .. image:: /images/iconKanban.png
+      :align: center
+      
+   ProjeQtOr integrates the AGILE method Kanban into its basic version.
+   
+   :ref:`kanban`
+   
+   
+   
+   
+
+.. container:: 
+
+   **LiveMeeting**
+
+   .. image:: /images/iconMeeting32.png
+      :align: center
+
+   ProjeQtOr integrates the AGILE method LiveMeeting into its basic version .
+         
+   :ref:`live-meeting-steering`
+   
+   
+   
+   
+
+.. container:: 
+
+   **Change request**
+
+   .. image:: /images/iconChangeRequest.png
+      :align: center
+      
+   change demand management is integrated with ProjeQtOr for better organization AGILE.
+         
+   :ref:`change-request`
+   
+   
+   
+   
+   
+
+.. container:: 
+
+   **Aggregated Resource**
+
+   .. image:: /images/PoolRessource.png
+      :align: center
+      
+   change demand management is integrated with ProjeQtOr for better organization AGILE.
+         
+   :ref:`aggregated-resource`
+      
+
+      
+And others news_ that you can discover on the Change History web page
+
+.. _news: https://www.projeqtor.org/en/product-en/downloads/change-history-en
+
+
+
+.. raw:: latex
+
+    \newpage
+
+Features
+--------
+
+ProjeQtOr  is a "Quality based Project Organizer".
+
+It is particularly well suited to IT projects, but can manage any type of project.
+
+It offers all the features needed to different Project Management actors under a unique collaborative interface.
+  
+.. toctree::
+   :maxdepth: 2
+   
+   Features
+
+Concepts
+--------
+
+This chapter defines the concepts of ProjeQtOr.
+
+They can be referred in the following chapters.
+
+.. toctree::
+   :maxdepth: 2
+
+   Concept
+
+Agile Methods
+-------------
+
+This chapter includes ProjeQtOr features that allow you to practice agile methods.
+
+.. toctree::
+   :maxdepth: 2
+   
+   Agile
+
+   
+Graphical user interface
+------------------------
+
+ProjeQtOr provides a very rich user interface.
+
+It may be frightening at first glance because of the very numerous elements it provides, 
+but once you'll get familiar to the structure of the interface you'll discover that it is quite simple 
+as all screens have the same frames and sections always have simular structure and position.
+
+.. toctree::
+   :titlesonly:
+
+   Gui
+   CommonSections
+   UserParameter
+
+
+
+Planning and Follow-up
+----------------------
+
+ProjeQtOr provides all the elements needed to build a planning from workload, 
+constraints between tasks and resources availability.
+
+The main activity of Project Leader is to measure progress, analyse situation and take decisions.
+In order to ease his work, ProjeQtOr provides several reporting tools, from the well know Gantt chart, to many reports.
+
+.. toctree::
+   :maxdepth: 1
+
+   PlanningElements 
+   Gantt
+   Today 
+   Diary
+   Report
+
+
+Real work allocation
+--------------------
+
+As ProjeQtOr implements Effort Driven planning (work drives planning calcuation), 
+one of the key to manage project progress is to enter the real work 
+and re-estimate left work for all ongoing tasks.
+
+ProjeQtOr provides a dedicate screen for this feature, to ease this input so that entering real work is as quick as possible.
+ 
+.. toctree::
+   :titlesonly:
+
+   RealWorkAllocation
+
+Document management
+-------------------
+
+ProjeQtOr integrates an easy to use Document Management feature.
+
+.. toctree::
+   :maxdepth: 2
+
+   Document
+
+Ticket management
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   Ticket
+   TicketDashBoard
+
+  
+Requirements & Tests
+--------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   RequirementsTest
+   RequirementsDashBoard
+
+Financial
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   Expenses
+   Incomes
+   
+Configuration Management
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   ConfigurationManagement
+
+Risk & Issue Management
+-----------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   RiskIssueManagement
+
+Steering
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+   Steering
+
+Environmental parameters
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   User
+   Resource
+   Customer
+   Provider
+   Recipient
+
+Tools
+-----
+
+.. toctree::
+   :maxdepth: 2
+ 
+   Tools
+
+Controls & Automation
+---------------------
+
+.. toctree::
+   :maxdepth: 1
+ 
+   ControlAutomation
+
+Access rights
+-------------
+
+.. toctree::
+   :maxdepth: 1
+ 
+   AccessRights
+
+Lists of values
+---------------
+
+.. toctree::
+   :maxdepth: 1
+
+   ListsOfValues
+
+
+.. _index-element-types-label:
+
+Lists of types
+--------------
+
+Every element is linked to a type, defining some mandatory data or other GUI behavior.
+
+.. toctree::
+   :maxdepth: 1
+   
+   ListsOfTypes
+
+Plug-ins
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+   Plugin
+
+Organizations
+-------------
+
+.. toctree::
+   :maxdepth: 1
+
+   Organization
+
+Administration
+--------------
+
+.. toctree::
+   :maxdepth: 1
+
+   Administration
+   GlobalParameters
+
+Transverses Features
+--------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   TransverseFeatures   
+
+Humans Resources
+----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   HumanResources   
+   
+Glossary
+--------
+
+.. toctree::
+   :maxdepth: 1
+  
+   Glossary

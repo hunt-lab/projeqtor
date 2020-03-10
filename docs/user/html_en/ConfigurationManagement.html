@@ -1,0 +1,538 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Configuration Management &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Risks" href="RiskIssueManagement.html" />
+    <link rel="prev" title="Incomes" href="Incomes.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RiskIssueManagement.html" title="Risks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Incomes.html" title="Incomes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="configuration-management">
+<span id="configurationmanagement"></span><span id="index-0"></span><h1>Configuration Management<a class="headerlink" href="#configuration-management" title="Permalink to this headline">¶</a></h1>
+<p>Configuration management consists of managing the technical description of a system, as well as managing all changes made during the evolution of the system.</p>
+<p>It is the set of processes to ensure the conformity of a product to the requirements, throughout its life cycle.</p>
+<p>In computing, for example, configuration management can be used for many purposes.</p>
+<ul class="simple">
+<li><p>To store and trace the different versions or revisions of any information intended to be used by a system (hardware, software, document, unit data, etc.).</p></li>
+<li><p>To deploy configurations through a computer park in the form of files and data.</p></li>
+<li><p>Manage source codes …</p></li>
+</ul>
+<div class="section" id="products">
+<span id="product"></span><span id="index-1"></span><h2>Products<a class="headerlink" href="#products" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define product and sub-product.</p>
+<p>Allows to link components to product.</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id2">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the product.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Name of the product.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Product type</p></td>
+<td><p>Type of product.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Designation</p></td>
+<td><p>Trade name of the product known outside the company.</p></td>
+</tr>
+<tr class="row-even"><td><p>Customer</p></td>
+<td><p>The customer the product should be delivered to.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prime contractor</p></td>
+<td><p>The contact, into customer organization, who will be responsible for the product delivery.</p></td>
+</tr>
+<tr class="row-even"><td><p>Responsible</p></td>
+<td><p>Person responsible for the product.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sub-product</p></td>
+<td><p>Name of the top product if this product is a sub-product.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>State to be registered.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>item is closed if checked</p></td>
+</tr>
+<tr class="row-even"><td><p>Description :</p></td>
+<td><p>Box checked indicates the product is archived.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Project linked to this product</p>
+<p>Possibility of attaching the products of the list to projects.</p>
+<p class="rubric">Section Product versions</p>
+<p>List of versions defined for the product.</p>
+<p>Product versions are defined in <a class="reference internal" href="#product-version"><span class="std std-ref">Product Versions</span></a> screen.</p>
+<p class="rubric">Section Composition - List of sub-products used by this product</p>
+<p>List of sub-products for the product.</p>
+<p class="rubric">Section Composition - List of components used by this product</p>
+<p>See: <a class="reference internal" href="#relationship-product-component"><span class="std std-ref">Relationships</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><kbd class="kbd docutils literal notranslate">Display structure</kbd></p>
+<p>Button for displays the structure of the product.</p>
+<p>Box checked “Show versions for all structure” allows to display versions of sub-products and components.</p>
+<p>Box checked “Show projects linked to versions” allows to display projects linked.</p>
+</div>
+</div>
+<div class="section" id="product-versions">
+<span id="product-version"></span><span id="index-2"></span><h2>Product Versions<a class="headerlink" href="#product-versions" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define versions of a product.</p>
+<p>Allows to link a component version to product version.</p>
+<p>Allows to link the product version to a project.</p>
+<p>Ability to define the compatibility between product versions (feature activated through a global parameter)</p>
+<p class="rubric">Automatic formatting of version name</p>
+<p>Possibility to define if the version name is automatically produced from the product name and version number.</p>
+<p>Set <a class="reference internal" href="GlobalParameters.html#global-parameters"><span class="std std-ref">Global Parameters</span></a> to activate this feature.</p>
+<p>Else, the version name will entered manually.</p>
+<p>By profile, possibility to have a different list of the version of the original product according to the status.</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#link-version-project-section"><span class="std std-ref">Projects linked to this version</span></a></p></li>
+<li><p><a class="reference internal" href="#version-product-component"><span class="std std-ref">Composition…</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id3">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the version</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Product</p></td>
+<td><p>The product on which the version applies</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Version number</p></td>
+<td><p>Version number of the product</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Product v° type</p></td>
+<td><p>Type of the product version: major, minor, patch</p></td>
+</tr>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Name of the version</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prime contractor</p></td>
+<td><p>The contact, into customer organization, who will be responsible for the version delivery</p></td>
+</tr>
+<tr class="row-even"><td><p>Responsible</p></td>
+<td><p>Resource responsible of the version.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sart date</p></td>
+<td><p>Initial, planned and real start dates of the version</p></td>
+</tr>
+<tr class="row-even"><td><p>Delivery date</p></td>
+<td><p>Initial, planned and real delivery dates of the version</p></td>
+</tr>
+<tr class="row-odd"><td><p>Entry into service</p></td>
+<td><p>Initial, planned and real entry into service date of the version</p></td>
+</tr>
+<tr class="row-even"><td><p>End date</p></td>
+<td><p>Initial, planned and real end dates of the version</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>State to be registered</p></td>
+</tr>
+<tr class="row-even"><td><p>Description</p></td>
+<td><p>Complete description of the version</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Version number &amp; Name</p>
+<p>The field “Version number” appears only if the global parameter “Automatic format of version name” is set to Yes.</p>
+<p>The field “Name” will be read only.</p>
+<p class="rubric">Prime contractor</p>
+<p>The field “Prime contractor can be different from product prime contractor.</p>
+<p class="rubric">Entry into service (Real)</p>
+<p>The field “Entry into service” specify the date of entry into service.</p>
+<p>The box “Done” is checked when the real date field is set.</p>
+<p class="rubric">End date (Real)</p>
+<p>The field “End date” specify the date end-of-service.</p>
+<p>The box “Done” is checked when the real date field is set.</p>
+</div>
+<div class="section" id="components">
+<span id="component"></span><span id="index-3"></span><h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define product components.</p>
+<p>Allows to define products using the component.</p>
+<p>Possibility to define component types and component versions that will only be used for definition of structure (not for Version Planning or Tickets)</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Other sections</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#relationship-product-component"><span class="std std-ref">Structure…</span></a></p></li>
+<li><p><a class="reference internal" href="#relationship-product-component"><span class="std std-ref">Composition…</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id4">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the component</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Name of the component</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Component type</p></td>
+<td><p>Type of component</p></td>
+</tr>
+<tr class="row-odd"><td><p>Identifier</p></td>
+<td><p>Another name to identify the component</p></td>
+</tr>
+<tr class="row-even"><td><p>Responsible</p></td>
+<td><p>Person responsible for the component</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Statut</p></td>
+<td><p>State to be registered</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates the component is archived</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>Complete description of the component</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Component versions</p>
+<p>List of versions defined for the component.</p>
+<p>Component versions are defined in <a class="reference internal" href="#component-version"><span class="std std-ref">Component Versions</span></a> screen.</p>
+</div>
+<div class="section" id="component-versions">
+<span id="component-version"></span><span id="index-4"></span><h2>Component Versions<a class="headerlink" href="#component-versions" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define versions of a component.</p>
+<p>Allows to link a product version to component version.</p>
+<p class="rubric">Automatic formatting of version name</p>
+<p>Possibility to define if the version name is automatically produced from the component name and version number.</p>
+<p>Set global parameters to activate this feature.</p>
+<p>Else, the version name will entered manually.</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#version-product-component"><span class="std std-ref">Structure…</span></a></p></li>
+<li><p><a class="reference internal" href="#version-product-component"><span class="std std-ref">Composition…</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id5">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the version</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Component</p></td>
+<td><p>The component on which the version applies</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Version number</p></td>
+<td><p>V° number of the component</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Component V° type</p></td>
+<td><p>Type of the component version: major, minor or patch</p></td>
+</tr>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Name of the version.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Name of the responsible.</p></td>
+</tr>
+<tr class="row-even"><td><p>Start date</p></td>
+<td><p>Initial, planned and real start dates of the version</p></td>
+</tr>
+<tr class="row-odd"><td><p>Delivery date</p></td>
+<td><p>Initial, planned and real delivery dates of the version</p></td>
+</tr>
+<tr class="row-even"><td><p>Entry into service</p></td>
+<td><p>Initial, planned and real entry into service date of the version</p></td>
+</tr>
+<tr class="row-odd"><td><p>End date</p></td>
+<td><p>Initial, planned and real end dates of the version</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Statut</p></td>
+<td><p>State to be registered</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>Complete description of the version</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Initial Date</strong></p>
+<p>when the planned date has been set, the initial date (if it is empty only) will be defined</p>
+</div>
+<p class="rubric">Version number &amp; Name</p>
+<p>The field “Version number” appears only if the global parameter “Automatic format of version name” is set to Yes.</p>
+<p>The field “Name” will be read only.</p>
+<p class="rubric">Entry into service (Real)</p>
+<p>The field “Entry into service” specify the date of entry into service.</p>
+<p>The box “Done” is checked when the real date field is set.</p>
+<p class="rubric">End date (Real)</p>
+<p>The field “End date” specify the date end-of-service.</p>
+<p>The box “Done” is checked when the real date field is set.</p>
+</div>
+<div class="section" id="relationships">
+<span id="relationship-product-component"></span><h2>Relationships<a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="product-and-component-elements">
+<h3>product and component elements<a class="headerlink" href="#product-and-component-elements" title="Permalink to this headline">¶</a></h3>
+<p>Allows to manage relationships between products and components to define product structure.</p>
+<p>See possible relationships:  <a class="reference internal" href="Concept.html#product-structure"><span class="std std-ref">Product structure</span></a></p>
+<p class="rubric">Relationships management</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button add" src="_images/ButtonAdd.png" /> to create a new relationship. The dialog box “Structure” appear.</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the corresponding relationship.</p></li>
+</ul>
+<div class="figure align-center" id="id6">
+<img alt="Dialog box - Structure" src="_images/CONF_BOX_ProductStructure.png" />
+<p class="caption"><span class="caption-text">Structure</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="versions-of-products-and-components">
+<span id="version-product-component"></span><h3>versions of products and components<a class="headerlink" href="#versions-of-products-and-components" title="Permalink to this headline">¶</a></h3>
+<p>Allows to define links between versions of products and components.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only with the elements defined in the product structure.</p>
+</div>
+<p class="rubric">Link management</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button add" src="_images/ButtonAdd.png" /> to create a new link. The dialog box “Version Structure” appear.</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the corresponding link.</p></li>
+</ul>
+<div class="figure align-center" id="id7">
+<img alt="Dialog box - Version structure" src="_images/CONF_BOX_VersionStructure.png" />
+<p class="caption"><span class="caption-text">Version structure</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="version-to-projects">
+<span id="link-version-project-section"></span><h3>version to projects<a class="headerlink" href="#version-to-projects" title="Permalink to this headline">¶</a></h3>
+<p>This section allows to manage links between projects and versions of products.</p>
+<p class="rubric">Link version to projects management</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button add" src="_images/ButtonAdd.png" /> to create a new link.</p></li>
+<li><p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to update an existing link.</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the corresponding link.</p></li>
+</ul>
+<div class="figure align-center" id="id8">
+<img alt="Dialog box - Project-Version link" src="_images/CONF_BOX_ProjectVersionLink.png" />
+<p class="caption"><span class="caption-text">Project / Version Link</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id9">
+<caption><span class="caption-text">Project-Version link dialog box</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Project</p></td>
+<td><p>The project linked to product version or the project list.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Product</p></td>
+<td><p>Product linked to the project or the list of products.</p></td>
+</tr>
+<tr class="row-even"><td><p>Version</p></td>
+<td><p>Product version linked to the project or list of product versions.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Start date</p></td>
+<td><p>Start date for validity of the link.</p></td>
+</tr>
+<tr class="row-even"><td><p>End date</p></td>
+<td><p>End date for validity of the link.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><p>State to be registerd</p></td>
+</tr>
+<tr class="row-even"><td><p>Closed</p></td>
+<td><p>Box checked indicates the link is not active anymore, without deleting it.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Project, Product and Version</p>
+<ul class="simple">
+<li><p>From the screen <strong>Projects</strong>, the fields <strong>product and version</strong> will be selectable.</p></li>
+<li><p>From the screen <strong>Product versions</strong>, the field <strong>project</strong> will be selectable.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="versions-planning">
+<span id="id1"></span><h2>Versions planning<a class="headerlink" href="#versions-planning" title="Permalink to this headline">¶</a></h2>
+<p>Select one or more product versions and the planning version is displayed.</p>
+<p>This planning displays each version of selected product versions and their components from define start date to deliverable date.</p>
+<p>To use it define your start and delivery date in Product Version and Component Version.</p>
+<div class="figure align-center" id="id10">
+<img alt="Delivery date component" src="_images/CONF_ZONE_deliveryDateComponent.png" />
+<p class="caption"><span class="caption-text">Delivery date component</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To insert values you have to activate display the start and delivery milestones’ in global parameters otherwise these fields are hidden.</p>
+</div>
+<p>This screen allows to see if the delivery date of Component versions is more later than their Product versions.</p>
+<p>Graphically, you can see any delay or incompatibility.</p>
+<div class="figure align-center" id="id11">
+<img alt="Planning version" src="_images/CONF_ZONE_planningVersion.png" />
+<p class="caption"><span class="caption-text">Planning version</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuration Management</a><ul>
+<li><a class="reference internal" href="#products">Products</a></li>
+<li><a class="reference internal" href="#product-versions">Product Versions</a></li>
+<li><a class="reference internal" href="#components">Components</a></li>
+<li><a class="reference internal" href="#component-versions">Component Versions</a></li>
+<li><a class="reference internal" href="#relationships">Relationships</a><ul>
+<li><a class="reference internal" href="#product-and-component-elements">product and component elements</a></li>
+<li><a class="reference internal" href="#versions-of-products-and-components">versions of products and components</a></li>
+<li><a class="reference internal" href="#version-to-projects">version to projects</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#versions-planning">Versions planning</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Incomes.html"
+                        title="previous chapter">Incomes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RiskIssueManagement.html"
+                        title="next chapter">Risks</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RiskIssueManagement.html" title="Risks"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Incomes.html" title="Incomes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

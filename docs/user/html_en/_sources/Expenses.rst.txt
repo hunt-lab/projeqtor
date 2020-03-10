@@ -1,0 +1,973 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Expenses
+
+.. index:: Expenses
+
+.. _Expenses:
+
+Expenses
+********
+
+The expenses incurred for the project are monitored.
+
+.. index:: Budget
+
+Budget
+------
+* A budget is a list of all products and different expenses to plan.
+ 
+* It is a plan that allows to define in advance the expenses, the incomes and the possible savings to be realized during a definite period.
+
+* It allows to anticipate the resources that the company will have at a specific moment.
+
+* You can create as much budget and sub budget as you want.
+
+* An expense is related to a base budget, ie a budget item
+
+* A budget item is linked to a parent budget 
+
+* in the same way as the project selector, you can filter, thanks to the "Budget Parent" filter, a budget and "his family" on the list poster.
+
+
+.. note:: 
+
+   **The parent budget**
+
+   * The parent budget exists only to consolidate budget line items
+   * You can't change spending in the Progress field of a parent budget 
+   * Only the target amount can be changed
+
+   **The budget item**
+
+   * The budget items are the finer element of the budget analysis. 
+   * These posts or budget destinations will allow you to detail your budget, categorizing it at your convenience.
+   
+   
+
+.. figure:: /images/GUI/EXPENSES_SCREEN_Budget.png
+   :alt: Budget screen
+   :align: center
+
+   Budget Screen
+
+.. rubric:: Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|  
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the payment
+   * - |RequiredField| Name
+     - Short description of the payment
+   * - |RequiredField| Budget type
+     - Type of budget: initial or additional
+   * - Budget orientation
+     - the orientation of the budget: operation or transformation 
+   * - Budget category
+     - subdivision of budget orientation into category
+   * - Article number
+     - The number of the article 
+   * - Organisation    
+     - Name of the organisation
+   * - Customer Code
+     - the code you attribute to your client 
+   * - is sub-budget of
+     - if your budget is part of another budget
+   * - Sponsor     
+     - from the budget.
+       If your budget comes from grant for example
+       
+.. rubric:: Progress
+
+.. figure:: /images/GUI/EXPENSES_ZONE_Progress.png
+   :alt: Progress Section
+   
+   Progress Section
+
+This section allows to follow the consolidation of all the expenses.
+
+The target amount is the only amount you can save on a parent budget.
+
+Other amounts are recovered from the sub-budgets and consolidated on the parent budget.
+
+Transferred Amount allows to release a sum of an amount planned for a budget item in order to redistribute it to another item.
+
+This amount is visible on all budget items.
+
+.. note:: 
+
+   **Transfered Amount**
+   
+   * Enter a negative amount on a budget line to transfer an amount
+   * Enter a positive amount on a budget line to recover this amount
+   * Only the parent budget and its sub budget will see this amount. 
+   * Another parent budget can not recover this amount.
+
+.. rubric:: Budget expense detail
+
+This section brings and displays the :ref:`project-expense` lines in the details 
+
+.. figure:: /images/GUI/EXPENSES_ZONE_DetailLine.png
+   :alt: Details lines
+
+   Details lines
+
+.. rubric:: Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| :term:`Status`
+     - change of states according to the :ref:`workflow` selected for the type of your budget 
+   * - is a budget item
+     - Self-checked box when the budget becomes a sub-budget
+   * - Under construction
+     - When the budget is validated. The box is unchecked
+   * - approved
+     - When the box is checked, the target amount is blocked
+   * - :term:`Closed`
+     - Flag to indicate that profile is archived.
+   * - Cancelled
+     - Flag to indicate that profile is cancelled.
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Call for tender)
+
+.. index:: Call for tender (Expenses)
+
+.. _call-for-tenders:
+
+Call for tenders
+----------------
+
+Call for tenders stores information about your needs to create a submission to call for tenders.
+
+This can for instance be used to detail all the requests and find the best answer.
+
+You have the possibility to create some different evaluation criterias. Thereafter you can attribute them a value in Offer.
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the call for tender
+   * - |RequiredField| Name
+     - Short name of the call for tender
+   * - |RequiredField| Type
+     - Type of tender
+   * - Project
+     - Project link to call for tender
+   * - Maximum amount
+     - Maximum amount of the call for tender
+   * - Expected delivery date
+     - Date expected
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 70
+   :header-rows: 1
+   
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the call for tender.
+   * - Responsible
+     - Person responsible for the processing of this call for tender.
+   * - Sent date
+     - Sent date of the call for tender. 
+   * - Expected answer date
+     - Expected answer date, meaning expected tender date.
+   * - :term:`Handled`
+     - Box checked indicates that the tender is handled with date when checked.
+   * - :term:`Done`
+     - Box checked indicates that the tender is done with date when checked. 
+   * - :term:`Closed`
+     - Box checked indicates that the tender is archived with date when checked.
+   * - Cancelled
+     - Box checked indicates that the tender is cancelled.
+
+.. rubric:: Section Submissions of tenders
+
+.. figure:: /images/GUI/EXPENSES_ZONE_SubmissionsTender.png
+   :alt: Submission of tender
+   :align: center
+
+   Submission of tender
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :widths: 30, 70
+   :align: left
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Provider
+     - Provider of the tender.
+   * - Contact
+     - Contact for the tender. 
+   * - Request date
+     - Request date when tender sent with the hour.
+   * - Expected answer date
+     - Date expected with the hour.
+   * - Tender status
+     - Statut of the tender.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Provider Tenders)
+
+.. index:: Provider Tenders (Expenses)
+
+.. _tenders:
+
+Provider Tenders
+----------------
+
+Tenders store information about the responses to the call for tenders that you have submitted.
+
+This can for instance be used to detail all the tenders and compare them to choose one of them.
+
+If your call for tenders has evaluation criteria, you can attribute a rating for each criteria.
+
+Evalutation will display a summary of your criterias with their ratings. 
+
+Global rating will then be displayed on the call for tender for all concerned tenders.
+
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the tender.
+   * - |RequiredField| Name
+     - Short name of the tender.
+   * - |RequiredField| Type
+     - Type of tender.
+   * - Project
+     - Project link to tender.
+   * - Call for tender
+     - Link to call for tender.
+   * - Tender statuts
+     - Statut of the tender.
+   * - |RequiredField| Provider
+     -  Provider of the tender.
+   * - External reference
+     - External reference of the tender.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+   
+   * - Field
+     - Description
+   * - |RequiredField| :term:`Status`
+     - Actual status of the tender.
+   * - Responsible
+     - Person responsible for the processing of this tender.
+   * - Contact
+     - Contact of the tender.
+   * - Request date
+     - Resquest date for tender.
+   * - Expected answer date
+     - Expected answer date of the tender.
+   * - Date of receipt
+     - Date of receipt of the tender with the hour.
+   * - Offer validity
+     - Offer validity date.
+   * - Initial
+     - Price
+   * - Negotiated
+     - Price of negotiated.
+   * - Payment conditions
+     - Type of payment conditions.
+   * - Delivery delay
+     - Delivery delay of the tender.
+   * - Expected delivery date
+     - Expected delivery date of the tender.   
+   * - :term:`Handled`
+     - Box checked indicates that the tender is handled with date when checked.
+   * - :term:`Done`
+     - Box checked indicates that the tender is done with date when checked. 
+   * - :term:`Closed`
+     - Box checked indicates that the tender is archived with date when checked.
+   * - Cancelled
+     - Box checked indicates that the tender is cancelled.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Order to provider)
+
+.. index:: Order to provider (Expenses)
+
+.. _order_providers:
+
+Orders to provider
+------------------
+
+.. rubric:: Section Description
+
+.. figure:: /images/GUI/EXPENSES_ZONE_DescriptionZone.png
+   :alt: Order to provider - Description section
+   :align: center
+   
+   Order to provider - Description section
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the expense 
+   * - |RequiredField| Name
+     - Short description of the expense
+   * - |RequiredField| Order to provider type
+     - Type of order: Product and/or Service
+   * - |RequiredField| Project 
+     - The project concerned by the order
+   * - Sent date 
+     - date of sending to the supplier
+   * - :term:`Origin`
+     - Element which is the origin of the quotation 
+   * - Provider
+     - Name of the provider
+   * - External Reference
+     - supplier's reference
+
+ 
+.. rubric:: Section Treatment
+
+.. figure:: /images/GUI/EXPENSES_ZONE_TreatmentOrderProvider.png
+   :alt: Order to provider - Treatment section
+   :align: center
+   
+   Order to provider - Treatment section
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Defines the progress of the element's treatment 
+   * - Responsible
+     - Name of the person in charge of the order
+   * - Contact
+     - Name of the contact related to the order at the supplier 
+   * - payment conditions 
+     - description of payment terms
+   * - Delivery delay 
+     - from the validation of the order, duration of treatment and preparation of products/services
+   * - Delivery date : Planned date
+     - Delivery date planned by the supplier
+   * - Delivery date : Real date
+     - Actual delivery date of the supplier
+   * - Delivery date : Validated date
+     - Delivery date validated with the supplier     
+   * - :term:`Handled status`
+     - Defines whether ‘handled’ flag is automatically set for this status.
+   * - :term:`Done status`
+     - Defines whether ‘done’ flag is automatically set for this status.
+   * - :term:`Closed status`
+     - Defines whether ‘closed’ flag is automatically set for this status.
+   * - :term:`Cancelled status`
+     - Defines whether ‘cancelled’ flag is automatically set for this status.
+   * - Untaxed amount
+     - Amount of the order without taxes
+   * - Tax rate
+     - applicable tax rates in your country/region
+   * - Tax Amount
+     - Total amount of taxes calculated based on Taxe rate
+   * - Full amount
+     - Total amount of the order including taxes             
+
+
+.. note:: 
+
+   you can attach many documents related to your order: The general conditions of sale, the quotation, the order form ...            
+   
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Terms of payment to provider)
+
+.. index:: Terms of payment to provider (Expenses)
+
+.. _Term_payment:
+
+Terms of payments to providers
+------------------------------
+
+In France, inter-company payment periods are regulated and set at maximum 60 calendar days or 45 days end of month 
+from the date of issue of the invoice. 
+
+Failing to mention the payment period in the contract or the invoice,
+it is legally fixed to 30 days after receipt of the goods or performance of the service. 
+
+Depending on the sector, deadlines are modifiable
+
+In this screen, you can save, organize, track and edit your payment dates to your supplier
+
+.. rubric:: Section Description 
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 40, 70
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the term of payment
+   * - |RequiredField| Name
+     - Short description of the term
+   * - |RequiredField| Project
+     - project attached to the term of payment 
+   * - Order to provider
+     - Name of the order atatched to the term of payment  
+   * - Provider Bill
+     - the supplier's invoice 
+   * - Responsible
+     - Name of the person in charge of the payment  
+
+.. rubric:: Section Fixed price for term
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Initial ex VAT
+     - Amount before taxes
+   * - Tax
+     - Applicable tax
+   * - Full
+     - Amount with taxes 
+   * - |RequiredField| Date
+     - date of expiry  
+   * - Billed status
+     - If payment has been billed  
+   * - Paid status
+     - If payment has been paid   
+   * - :term:`Closed status`
+     - Defines whether ‘closed’ flag is automatically set for this status.
+
+.. note:: 
+
+      * **Ex VAT:** The column value is automatically updated with the sum of bill line amounts.
+
+      * **Tax:** If the tax is not defined, nothing is applied in this field and the amount will remain without tax
+ 
+      * **Full:** If the total amount exclusive of tax and the tax rate have been entered, the total amount will be calculated automatically 
+      
+      * On the project, the sum of the expenses must be carried out in including taxes if the entry of expenses is in including taxes
+ 
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Provider Bills)
+
+.. index:: Provider Bills (Expenses)
+
+.. Provider_Bills:
+
+Provider bills
+--------------
+
+.. rubric:: Section Description 
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the term of payment
+   * - |RequiredField| Name
+     - Short description of the term
+   * - |RequiredField| Provider :ref:`client_bill_type`
+     - The way to define common behavior on group of bills     
+   * - |RequiredField| Project
+     - project attached to the bill 
+   * - Date
+     - Date of the bill
+   * - :term:`Origin`
+     - Element which is the origin of the quotation 
+   * - Provider
+     - Provider name.
+   * - |RequiredField| External reference
+     - :term:`External reference` of the provider's bill
+   * - :term:`Description`
+     - Complete description of the expense.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| :term:`status`
+     - Actual status of the expense.
+   * - Responsible
+     - person placing the order 
+   * - Contact
+     - name of the person at the supplier related to this bill     
+   * - Payment conditions
+     - the payment terms of the supplier 
+   * - Payment due date
+     - expected payment date
+   * - :term:`Handled`
+     - Box checked indicates that the tender is handled with date when checked.
+   * - :term:`Done`
+     - Box checked indicates that the tender is done with date when checked. 
+   * - :term:`Closed`
+     - Box checked indicates that the tender is archived with date when checked.
+   * - Cancelled
+     - Box checked indicates that the tender is cancelled.
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Payment to provider)
+
+.. index:: Payment to provider (Expenses)
+
+.. _Term_payment:
+
+
+Payements to provider
+---------------------
+
+Follow the payment of your supplier invoices to better organize your general cash flow or your working capital
+
+
+.. rubric:: Section Description 
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the term of payment
+   * - |RequiredField| Name
+     - Short description of the payment
+   * - |RequiredField| Payment to :ref:`provider-type`
+     - The way to define common behavior on payments to provider     
+
+.. rubric:: Section Treament 
+
+.. figure:: /images/GUI/EXPENSES_ZONE_TreatmentPayments.PNG
+   :alt: Payment modes
+   
+   Payment modes
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Payment mode
+     - groups different payment methods
+   * - Payment date
+     - the date on which the payment method chosen above will be made
+   * - payment amount 
+     - Amount of the bill
+   * - Payment fee
+     - Fee generated by payment or otherwise
+   * - payment credit 
+     - Amount of credit if there is   
+   * - Provider payment term
+     - selection of the payment deadline to the supplier
+   * - Provider bill
+     - selection of the provider bill
+   * - Provider bill reference
+     - The reference is automatically fill in when selecting the provider bill
+   * - Provider
+     - The name of the provider is automatically fill when selecting the provider bill
+   * - Provider bill amount
+     - The amount of the bill is automatically fill when selecting the provider bill                               
+   * - :term:`Closed`
+     - Box checked indicates that the tender is archived with date when checked.
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Expenses (Individual)
+
+.. index:: Individual Expenses
+
+.. _individual-expense:
+
+Individual expenses
+-------------------
+
+An individual expense stores information about individual costs, such as travel costs or else.
+
+Individual expense has detail listing for all items of expense.
+
+This can for instance be used to detail all the expense on one month so that each user opens only one individual expense per month (per project), or detail all the elements of a travel expense.
+
+.. rubric:: Planned amount
+
+Planned amount will help to have an overview of project total costs, even before expense is realized.
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`expense-detail-lines`
+   * :ref:`Linked element<linkElement-section>`
+   * :ref:`Attachments<attachment-section>`
+   * :ref:`Notes<note-section>`
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the expense.
+   * - |RequiredField| Name
+     - Short description of the expense.
+   * - |RequiredField| Type
+     - Type of expense.
+   * - |RequiredField| Project
+     - The project concerned by the expense.
+   * - |RequiredField| Resource
+     - Resource concerned by the expense.
+   * - :term:`Description`
+     - Complete description of the expense.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the expense.
+   * - Responsible
+     - Person responsible for the processing of this expense
+   * - Planned
+     - Planned amount of the expense (Date is mandatory)
+   * - Real
+     - Real amount of the expense (Date is mandatory) 
+   * - Payment done
+     - Box checked indicates the payment is done
+   * - :term:`Closed`
+     - Box checked indicates that the expense is archived
+   * - Cancelled
+     - Box checked indicates that the expense is cancelled
+
+.. topic:: Fields Planned & Real
+
+   * **Full**: Amount.
+
+     * Real amount is automatically updated with the sum of the amounts of detail lines.
+
+   * **Payment date**: 
+
+     * For field "Planned" is the planned date.
+     * For field "Real" can be the payment date or else.
+
+
+.. raw:: latex
+
+    \newpage
+
+
+.. index:: Expenses (Project)
+
+.. index:: Project (Expenses)
+
+.. _project-expense:
+
+Project expense
+---------------
+
+A project expense stores information about project costs that are not resource costs.
+
+This can be used for all kinds of project cost : 
+
+* Machines (rent or buy).
+* Softwares.
+* Office.
+* Any logistic item.
+
+
+.. rubric:: Planned amount
+
+Planned amount will help to have an overview of project total costs, even before expense is realized.
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`expense-detail-lines`
+   * :ref:`Linked element<linkElement-section>`
+   * :ref:`Attachments<attachment-section>`
+   * :ref:`Notes<note-section>`
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the expense.
+   * - |RequiredField| Name
+     - Short description of the expense
+   * - |RequiredField| Type
+     - Type of expense: machine or office expense
+   * - |RequiredField| Project
+     - The project concerned by the expense
+   * - Provider
+     - Provider name
+   * - :term:`External reference`
+     - External reference of the expense
+   * - :term:`Origin`
+     - Element which is the origin of the quotation  
+   * - Business responsible
+     - The person who makes the purchase requisition
+   * - Financial responsible
+     - The person who pays the purchase
+   * - Payment conditions
+     - Conditions of payment
+   * - :term:`Description`
+     - Complete description of the expense
+
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the expense.
+   * - Order date
+     - Date of the order.
+   * - Delivery mode
+     - Delivery mode for the order.
+   * - Delivery delay
+     - Delivery delay for the order.
+   * - Expected delivery date
+     - Expected delivery date for the order.
+   * - Date of receipt
+     - Date of receipt of the order.
+   * - :term:`Closed`
+     - Box checked indicates that the expense is archived.
+   * - Cancelled
+     - Box checked indicates that the expense is cancelled.
+   * - Planned
+     - Planned amount of the expense (Date is mandatory).
+   * - Real
+     - Real amount of the expense (Date is mandatory).
+   * - Payment done
+     - Box checked indicates the payment is done.
+   * - Result
+     - Complete description of the treatment of the expense.  
+  
+.. topic:: Fields Planned & Real
+
+   * **Ex VAT**: Amount without taxes.
+     
+     * Real amount is automatically updated with the sum of the amounts of detail lines.
+
+   * **Tax**: Applicable tax. 
+
+   * **Full**: Amount with taxes.
+
+   * **Payment date**: 
+
+     * For field "Planned" is the planned date.
+     * For field "Real" can be the payment date or else.
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index::  Expenses (Detail line)
+
+.. _expense-detail-lines:
+
+Expenses detail lines
+=====================
+
+.. rubric:: Section Expenses detail lines
+
+This section is common to individual and project expenses.
+
+It allows to enter detail on expense line.
+
+.. topic:: Fields: Real amount and date
+
+   * When a line is entered, expense real amount is automatically updated to sum of lines amount.
+   * Real date is set with the date in the firts detail line.
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Date
+     - Date of the detail line.
+   * - Name
+     - Name of the detail line.
+   * - Type
+     - Type of expense.
+   * - Detail
+     - Detail depends on the type of expense.
+   * - Amount
+     - Amount of the detail line.
+
+
+.. rubric:: Detail lines management
+ 
+* Click on |buttonAdd| to add a detail line.
+* Click on |buttonEdit| to modify an existing detail line.
+* Click on |buttonIconDelete| to delete the detail line.
+
+
+.. figure:: /images/GUI/BOX_ExpenseDetail.png
+   :alt: Dialog box - Expense detail
+   :align: center
+
+   Expense detail dialog box
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Fields - Expense detail dialog box - Required field |ReqFieldLegend| 
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Date
+     - Date of the detail.
+   * - Reference
+     - External reference.
+   * - |RequiredField| Name
+     - Name of the detail.
+   * - Type
+     - Type of expense.
+   * - |RequiredField| Amount
+     - Amount of the detail.
+
+.. topic:: Field Date
+
+   This allows to input several items, during several days, for the same expense, to have for instance one expense per travel or per month.
+
+.. topic:: Field Type
+
+   Depending on type, new fields will appear to help calculate of amount.
+   
+   Available types depending on whether individual or project expense.
+   
+   See: :ref:`expense-detail-type`. 
+
+.. topic:: Field Amount 
+
+   Automatically calculated from fields depending on type.
+   
+   May also be input for type “justified expense”.
+

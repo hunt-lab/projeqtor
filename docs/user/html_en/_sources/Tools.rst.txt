@@ -1,0 +1,654 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Tools
+
+.. index:: Toolspage
+
+.. _toolspage:
+
+*****
+Tools
+*****
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Email (Sent)
+
+.. _emails-sent:
+
+Emails sent
+-----------
+
+Users can have a look at the list of the automatic emails sent.
+
+All the information about the email, including the status showing whether the email was correctly sent or not.
+
+.. raw:: latex
+
+    \newpage
+    
+.. _emails-to-send:
+
+Emails to send
+--------------
+
+You must enable the Activate email grouping option in the :ref:`global parameters<administration-emailing-group-label>`
+
+The programmed emails will be grouped in this screen before their automatic sending based on the period entered in the global parameters
+
+.. figure:: /images/GUI/TOOLS_SCR_EmailtoSend.png
+   :alt: Email to send screen
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: scheduled report
+
+.. _scheduled_report:
+   
+Sheduled Report
+---------------
+
+In reports, you can schedule sending emails for accurate reports.
+See: :ref:`sending_report`
+
+You can get the list and details of this programming on this screen
+
+Click on |buttonIconDelete| to cancelled the programmation
+
+.. figure:: /images/GUI/TOOLS_ZONE_ScheduledReport.png
+   :alt: Sending a report to email
+   :align: center
+
+
+.. index:: Internal alert (Sent)
+
+.. _alerts:
+
+Alerts
+------
+
+Users can have a look at the alerts sent.
+
+By default, administrators can see all the alerts sent, and other users only see their own alerts.
+
+
+.. figure:: /images/GUI/SCR_Alert.png
+   :alt: Alert screen
+   :align: center
+
+   Alert screen
+
+
+.. topic:: Button Mark as read
+
+   The button is available if  the user alert is not tagged “read” yet.
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Message
+
+.. _message:
+
+Messages
+--------
+
+.. sidebar:: Concepts 
+
+
+   * :ref:`profiles-definition`
+
+You can define some message that will be displayed on the :ref:`Today<messages-section>` screen of users.
+
+Optionally, the message can be shown on login screen.
+
+You can limit the display by profile, project and user.
+
+The message will be displayed in a color depending on the message type.
+
+.. figure:: /images/GUI/TOOLS_SCR_Message.png
+   :alt: Today screen Message
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required Fields
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the message 
+   * - |RequiredField| Title
+     - Header of the message
+   * - |RequiredField| Message type
+     - Type of message
+   * - Sart Date
+     - Date when the message begins
+   * - End Date
+     - Date when the message ended
+   * - :term:`Message<Description>`
+     - Complete text of the message       
+   * - Profile
+     - The message is limited to users with this profile
+   * - Project
+     - The message is limited to resources allocated to the project
+   * - User
+     - The message is limited to this user
+   * - Show on login screen
+     - Show this message on login screen
+   * - :term:`Closed`
+     - Flag to indicate that the message is archived
+    
+.. raw:: latex
+
+    \newpage
+
+.. index:: Message Legal
+
+.. _message-legal:
+
+Legal notice
+------------
+
+You can define a "legal" message that will be displayed when you log in from the home screen
+
+.. figure:: /images/GUI/TOOLS_SCR_MessageLegal.png
+   :alt: Display of the legal message
+
+You must click on the button I agree that the message disappears
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Import data
+
+.. _import-data:
+
+Import data
+-----------
+
+Imports data from CSV or XLSX files.
+
+
+.. rubric:: How to do
+
+1. Select the element type from the list.
+2. Select file format (CSV or XLSX).
+3. Select the file.
+4. Click on **Import data** button to start importing.
+
+.. rubric:: Report of the import
+
+* Data that is not imported because not recognized as a field appear in grey text in the result table.
+* Data that are voluntarily not imported (because must be calculated) appear in blue text in the result table.
+
+.. note:: Import users
+
+   * The password field must be cut and pasted from the database because it is encrypted.
+   * If you enter some readable password, the users will not be able to connect.
+
+.. attention:: 
+
+   * If you want to create new users **don't put any id** because if id already exists, it will be overridden by the new (with possibility to erase admin user…).
+   * Always keep in mind that your import may have some impact on administrator user.
+   * So be sure to keep an operational admin access.
+
+
+.. note:: Importing document versions
+
+    * Two ways to import document versions:       
+        - by describing only the version, with its standard fields.    
+        - by describing the document and the version (the name of the fields of the version will be followed by '(DocumentVersion)', or its translation into the current language).
+
+.. note:: CSV import 
+    
+    * The CSV import file may also include :  
+        - 'importFile' field that will give the link to the version file (this file will have to be reachable by the PHP server).
+        - 'target' field that can be set to 'DELETE' (the file to be imported is deleted after import) or a directory name (the file to be imported is moved to this directory after import) or nothing (the file to be imported is not modified).
+    
+    
+.. raw:: latex
+
+    \newpage
+
+
+.. _file-format:
+
+File format
+"""""""""""
+
+The content of the imported file must fit the element type description.
+
+To know the data that may be imported, click on the |buttonIconHelp| button.
+
+.. rubric:: Names of columns 
+
+* The first line of the file must contain the name of the fields.
+
+.. note::
+
+   * Names of columns can contain spaces (to have better readability).
+   * The spaces will be removed to get the name of the column.
+
+.. hint:: 
+   
+   * Look into the model class. The names are the same.
+
+.. rubric:: Date format
+
+* Dates are expected in format “YYYY-MM-DD”.
+
+
+
+.. raw:: latex
+
+    \newpage
+
+Data import process
+"""""""""""""""""""
+
+Operations are performed, depending on whether the element type, the column or the column value.
+
+.. rubric:: Column Id 
+
+You may or may not add an "id" column in the file.
+
+ .. compound:: **Column "id" exists and "id" is set in a line** 
+
+    * The import will try to update the corresponding element, and will fail if it does not exist.
+
+ .. compound:: **Column "id" does not exist or if "id" is not set in a line**
+
+    * The import will create a new element from the data.  
+
+.. rubric:: Linked tables
+
+For columns corresponding to linked tables ("idXxxx"), you can indicate as the column name  either "idXxxx“ or “Xxxx" (without "id") or the caption of the column (as displayed on screens).
+
+ .. compound:: **Numeric value**
+
+    * If the value of the column is numeric, it is considered as the code of the item.
+
+ .. compound:: **Non numeric value**
+
+    * If the value of the column contains non numeric value, it is considered as the name of the item, and the code will be searched for the name. 
+
+.. rubric:: **Columns with no data**
+
+* In any case, columns with no data will not be updated.
+* Then you can update only one field on an element.
+
+.. rubric:: **Clear data**
+
+* To clear a data, enter the value "NULL" (not case sensitive).
+
+
+.. rubric:: Planning elements
+
+* Insertion into "Planning" elements (activity, project), automatically inserts an element in the table “PlanningElement”.
+* The data of this table can be inserted into the import file.
+
+.. rubric:: Tickets
+
+* Do not import the value of "real work" on tickets, even if it is specified in the import file.
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Import data (Automatic)
+
+Automatic import
+""""""""""""""""
+
+.. figure:: /images/GUI/ADMIN_ZONE_AutoImport.png
+   :alt: Automatic import of files
+   
+Imports can be automated.
+
+Files placed on a defined directory will automatically be imported.
+
+.. note:: 
+
+   * Automatic import parameters must be set in :ref:`Global parameters<automatic-import>` screen.
+   * Background task must be started by :ref:`admin-console` screen.
+
+
+------------
+ 
+The files must respect some basic rules.  
+
+.. rubric:: File name format
+
+* File name format is : "Class"_"Timestamp"."ext"
+* Example of import file name: Ticket_20131231_235959.csv
+
+ .. compound:: **Class**
+
+    * The type of item to be imported (Ticket, Activity, Question, …).
+
+ .. compound:: **Timestamp**
+
+    * Timestamp defined to be able to store several files in the directory.
+    * Format is free.
+    * The recommended format is “YYYYMMDD_HHMMSS”.
+
+ .. compound:: **Ext**
+
+    * File extension, representing its format.
+    * Valid extensions are CSV and XLSX.
+
+.. rubric:: File format
+
+* The files must follow the ProjeQtOr :ref:`file-format`.
+* Files must be full and consistent.
+
+   .. hint::
+
+      * The files should not be directly created in the import folder.
+      * They must be created in a temporary folder and moved afterwards. 
+
+--------------
+
+.. rubric:: Import process
+
+* Correctly imported files are moved to a “done” sub folder of the import folder.
+* If an error occurs during import of a file, the full file is moved to “error” sub-folder of the import folder, even if there is only one error over many other items correctly integrated.
+* You can get the result as a log file and/or email summary. 
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Manual Notification
+
+.. _cloned-environment:
+
+Cloned Environnement
+--------------------
+
+You will be able to duplicate the complete environment (data and code) to form a simulation environment. 
+
+.. rubric:: Administration of simulation requests
+
+.. figure:: /images/GUI/TOOLS_ZONE_ClonedEnvironment.png
+   :alt: Cloned environment parameters
+   
+   Cloned environment parameters
+   
+   
+This parameters will also be accessible from simulated environments.
+
+Click on |buttonIconParameter| on the Simulation Management screen
+   
+   
+ .. compound:: Rights management
+
+   Definition of profiles that have the right to create a simulation.
+   
+ .. compound:: Sequencing of the creation of simulations
+
+   This is the setting for taking creation requests into account.
+   
+   * **Fixed frequency**
+   
+     Analyzes creation requests at regular intervals and starts the generation of simulation environment as soon as a request is encountered.
+   
+   * **At a given time**
+   
+     to program night creations for example
+     
+     "Immediate" requests may take some time if multiple simulation requests are generated simultaneously.  
+  
+  
+ .. compound:: Definition and management of boundaries
+
+   You can limit the number of total simulations per profiles.
+   
+      This limitation can have some advantages:
+      
+      * avoid saturating the server.
+      * force users to clean up their files.
+      * limit performance degradation caused by the creation of a simulated environment
+
+   If the limits are reached, the request screen to create a simulated environment will be blocked and the reason explained.
+   
+   .. figure:: /images/GUI/TOOLS_BOX_RequestInvalid.PNG
+      :alt: Invalid Request
+      
+      example of a invalid request due to too much creation request.
+      
+      
+   Removal requests will be decremented.
+
+.. rubric:: The cloned Environment managment
+
+.. figure:: /images/GUI/TOOLS_SCR_ClonedEnvironment.png
+   :alt: Cloned Environment managment
+   
+   Cloned environment managment
+   
+This screen allows you to manage your queries for new simulation environments, to follow them or to request the deletion of a particular simulation.
+
+You can also track requests from other users based on your profiles and your rights.
+
+
+ .. compound:: Generating a simulation environment
+
+   To request the creation of a new simulation area, click on |buttonAdd|
+   
+   A pop up will appear allowing you to make your request.
+   
+   .. figure:: /images/GUI/TOOLS_BOX_AddRequest.png
+      :alt: Add request
+      
+      Add request
+      
+
+   Identify yourself and name your space
+   
+   The simulated databases will always have a name prefixed by \"simu_" followed by the name of the simulation.
+   
+
+
+ .. compound:: Availability date
+
+   The dates of availability of the simulation spaces are indicated when your request is taken into account.
+   
+   
+ .. compound:: Color code
+   
+   * **Blue:** Request being created
+   * **Orange:** Warning (delete request)
+   * **Red:** Error creating the environment (path, rights ...)
+   * **Green:** Environment creates ready to open
+   
+      
+ .. compound:: Go to the cloned Environment
+   
+   When your simulation is ready, green status, you can open your cloned environment.
+   Click on |iconGoto| to launch the environment.
+   
+   A new tab opens with a new ProjeQtOr session. Authenticate yourself, you can start working in your environment.
+   
+   .. figure:: /images/GUI/TOOLS_SCR_ClonedEnvironmentSession.PNG
+      :alt: Cloned environment session
+      
+      Cloned environment session
+   
+   The instance area turns red when you are in a simulation space.
+   
+   Not all screens or functions will be accessible in this space. 
+   
+   For example, you will not be able to request and create a new simulation space in your cloned environment.   
+     
+     
+ .. compound:: Copy a cloned Environment
+   
+You did a successful simulation on one of your cloned environment. 
+
+You want the copy to run other tests but without touching the simulation.
+
+Just copy this environment.
+
+The origin of the copy will then be indicated in the list with a shortcut to access it.
+
+   
+ .. compound:: Copying datas
+   
+   It is necessary to copy the code and the data because the simulations created in a version could no longer be compatible with the code of the main instance that has migrated.
+
+   The creation of a simulation instance is a heavy process for the server: duplication of code, duplication of data...
+   
+   That's why when generating your simulation space, not all data is copied.
+   
+  
+      **Is not copied**
+      
+           * Archived data (closed)
+           * Update history
+           * Attached documents and files
+      
+      **Copy of the code** 
+      
+      Disabling all automation and notifications
+      
+      Update the simulations table to record the actual creation:
+      
+           * Date and time of actual creation,
+           * Flag "available environment"
+           * Instance access URL 
+
+
+ .. compound:: Deleting a simulation environment
+
+   Request to delete a simulated environment:
+   
+   The delete request is available on the simulation list
+   
+   Delete requests are stored in the simulations table
+   
+   Deletes are processed in the same process as creatives but before creatives to free up space before allocating new resources to new instances
+
+      **Deleting process:**
+      
+      * Deleting data
+      * Deleting the code
+      * Update the simulations table to record the effective deletion:
+      
+           * Date and time of the effective deletion,
+           * Update of the "available environment" flag   
+
+.. tip::
+
+   To avoid problems of management of the rights too broad and invasion of the server, all the simulations (code) will be placed in a directory "simulation" of the principal repertoire of ProjeQtOr.
+
+   Thus, if the main instance is accessible via the url "projeqtor.dga.fr" the simulations will be accessible via the url "projeqtor.dga.fr/simulation/name_de_simulation".
+
+.. warning:: 
+
+   The CRON program must be started and running so that the simulation request can be taken into account and can be generated.
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Manual Notification
+
+.. _manual_notification:
+
+Notifications
+-------------
+
+You can defined manually notifications in this screen
+
+.. figure:: /images/GUI/TOOLS_SCR_Notifications.png
+   :alt: Notifications of the Tools menu screen
+
+You receive notifications as soon as you authenticate on the login screen
+
+.. figure:: /images/GUI/TOOLS_ZONE_ConnectionNotif.png
+   :alt: Connection screen with notification
+
+When you are logged in, you have a reminder at the top of the screen. 
+
+You have the number of unread notifications
+
+Hover over it for the list of notifications to appear
+
+A slight color line in front of the name indicates the type of notification
+
+* Red = alert
+* Blue = information
+* Yellow = warning
+
+Click on the name of the notification to display its detail screen
+
+.. figure:: /images/GUI/TOOLS_ZONE_NotificationList.png
+
+You can also display the notification in the part below the menu 
+
+.. figure:: /images/GUI/TOOLS_ZONE_MenuNotification.png
+   :alt: Unread notification in the menu
+   
+Click on an unread notification for discover the details
+
+
+.. figure:: /images/GUI/TOOLS_ZONE_MenuNotification_details.PNG
+   :alt: Unread notification details
+
+* The first icon indicates the type of notification
+* the second icon indicates how the notification was created
+   * System Notification
+   * Manual Notification
+* The third icon indicates if the notification has a definition. see: :ref:`notification-system`
+* Click on the fourth icon for display the detail of the notification
+ 
+
+.. note:: 
+
+   Type of alert 
+   
+   * |iconinfo| type information
+   * |iconwarning| type Warning
+   * |iconalert| type alert
+   * |iconsum| sum - Records all the type
+      
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Audit connections
+.. index:: Connection (Audit)
+
+.. _audit-connections:
+
+Audit connections
+-----------------
+
+Audit connection proposes a view of “who is online”.
+
+you can know which platform the user has logged on to, his browser and dates of his first and last access, as well as the duration of the connection
+
+.. figure:: /images/GUI/TOOL_SCR_AuditConnexion.png
+   :alt: Audit connection screen
+
+.. note::
+
+   The administrator has the possibility to force the disconnection of any user (except his own current connection,
+   see: :ref:`admin-console<manage_connection>`.

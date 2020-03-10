@@ -1,0 +1,590 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Humans Resources &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Glossary" href="Glossary.html" />
+    <link rel="prev" title="Activity Stream" href="TransverseFeatures.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Glossary.html" title="Glossary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="TransverseFeatures.html" title="Activity Stream"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="humans-resources">
+<span id="index-0"></span><span id="id1"></span><h1>Humans Resources<a class="headerlink" href="#humans-resources" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Documentation</strong></p>
+<p><a class="reference external" href="https://www.projeqtor.org/files/ProjeQtOr%20-%20Documentation%20-%20Absences%20r%C3%A9glement%C3%A9es.pdf">French documentation</a> on the implementation of regulated absences is available on the <a class="reference external" href="https://www.projeqtor.org/fr/product-fr/downloads-fr/">download page</a></p>
+</div>
+<p>This section allows to manage the society’s Humans Resources</p>
+<p>This system comes in addition to the standards of the management of absences</p>
+<ul class="simple">
+<li><p>You must define the <a class="reference internal" href="#employee-manager"><span class="std std-ref">Employees and Manager</span></a>, <a class="reference internal" href="#leaves-types"><span class="std std-ref">Leaves types</span></a> and <a class="reference internal" href="#employment-contract-type"><span class="std std-ref">Employment contract type</span></a></p></li>
+<li><p>You can choose the leave entitlement standard for each type of contract</p></li>
+<li><p>The employee may reserve periods of leave of absence according to his rights.</p></li>
+<li><p>The system also includes a validation process of the requests during the leave period.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Absence Administrator</strong></p>
+<p>In order to be able to manage and parameterize the human resources module after its installation,
+you must go to global parameters in the Work tab.
+A new parameter is displayed: Leaves System</p>
+</div>
+<div class="figure align-center" id="id8">
+<img alt="Global Parameters - Leaves System" src="_images/RH_ZONE_ParamGlob_LeavesAdmin.png" />
+<p class="caption"><span class="caption-text">You can choose here who will be the administrator of this module</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The HR module was created in order to be easily adapted to French law
+but it can be fully parameterized according to the rights of any country</p>
+</div>
+<div class="section" id="regulated-absence">
+<span id="regulated-absences"></span><span id="index-1"></span><h2>Regulated absence<a class="headerlink" href="#regulated-absence" title="Permalink to this headline">¶</a></h2>
+<p>The “Regulated Absence” module is used to manage absences that must be validated, controlled and have values to be regulated according to French law.</p>
+<p>Thanks to this module, it is thus possible to manage the paid holidays, the RTT, the Stopped diseases by treating</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>quantities acquired over a period of time</p></li>
+<li><p>the period of validity of a quantity of absence</p></li>
+<li><p>the possibility or not to take early holidays over the period being acquired</p></li>
+<li><p>the number of days before and after which the absence request can be made</p></li>
+<li><p>specific acquisition rules</p></li>
+<li><p>validation or rejection of an application</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A project dedicated to these regulated absences is created and makes it possible to store the requested days of absence as planned time
+and the days of absence validated as working time thus making it possible to integrate these absences in the planning.</p>
+</div>
+<p class="rubric">Leaves States</p>
+<p>Regulated absences have 3 states:</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">recorded</p>
+<p class="compound-last">Creation status. In this state all the data of the absence can be modified</p>
+</div>
+<div class="compound">
+<p class="compound-first">validated</p>
+<p class="compound-middle">State that only the manager and the administrator of the module can be enabled.</p>
+<p class="compound-last">In this state, only the state of absence can be changed by the manager or administrator</p>
+</div>
+<div class="compound">
+<p class="compound-first">cancelled</p>
+<p class="compound-middle">State that only the manager and the administrator of the module can be enabled.</p>
+<p class="compound-middle">In this state, only the state of absence can be modified by the manager or administrator</p>
+<p class="compound-last">and the number of days the absence represents are not taken</p>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The calculation of the number of days represented by absence is done on the basis of working days
+<a class="reference internal" href="GlobalParameters.html#global-parameters"><span class="std std-ref">Global Parameters</span></a> and schedule associated with employee: holidays, non-working days</p>
+</div>
+<div class="section" id="employees-and-manager">
+<span id="employee-manager"></span><span id="index-2"></span><h3>Employees and Manager<a class="headerlink" href="#employees-and-manager" title="Permalink to this headline">¶</a></h3>
+<div class="sidebar">
+<p class="sidebar-title">Other section</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="Resource.html#resource"><span class="std std-ref">Resources</span></a></p></li>
+<li><p><a class="reference internal" href="AccessRights.html#module-management"><span class="std std-ref">Module Management</span></a></p></li>
+</ul>
+</div>
+<p>The properties below is visible only when the <a class="reference internal" href="AccessRights.html#module-management"><span class="std std-ref">regulated Absence module</span></a> is enabled</p>
+<p class="rubric">Employee</p>
+<p>An employee is a <a class="reference internal" href="Resource.html#resource"><span class="std std-ref">Resources</span></a> whose property <strong>“is an employee”</strong> is checked in the screen ressources</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The manager records the request</p>
+<p>Employee makes the request</p>
+</div>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/RH_ZONE_DescriptionEmployee.png"><img alt="Employee is a resource" src="_images/RH_ZONE_DescriptionEmployee.png" style="width: 429.09999999999997px; height: 362.59999999999997px;" /></a>
+<p class="caption"><span class="caption-text">Box <strong>is an employee</strong> is checked</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the resources are saved as employees, you can manage them from the employee screen</p>
+<p>you find the same fields of description as the resources.</p>
+<div class="figure align-center" id="id10">
+<img alt="Employee screen" src="_images/RH_SCR_Employee.png" />
+<p class="caption"><span class="caption-text">Employee screen</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<p>In this section, the employee can see the person who manage its leaves periods</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Employment Contract</p>
+<p class="compound-middle">This section is visible and linked to the <a class="reference internal" href="#employment-contract-type"><span class="std std-ref">Employment contract type</span></a> screen</p>
+<p class="compound-middle">To an employee are associated a <a class="reference internal" href="#employment-contract"><span class="std std-ref">Employment contract</span></a> and <a class="reference internal" href="#leaves-rights-earned"><span class="std std-ref">Leave Rights earned</span></a></p>
+<p class="compound-middle">The contract is associated with a <a class="reference internal" href="#employment-contract-type"><span class="std std-ref">Employment contract type</span></a></p>
+<p class="compound-last">This allow the employee to associate the rules of acquisition, the special rules of regulated absences and the acquired rights by type of absence and by acquisition period.</p>
+</div>
+</div></blockquote>
+<p class="rubric">Manager</p>
+<p>A manager is a resource whose properties <strong>“is an employee”</strong> and <strong>“is absence manager”</strong> are checked</p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/RH_ZONE_DescriptionManager.png"><img alt="Manager is a resource and the manager of leaves" src="_images/RH_ZONE_DescriptionManager.png" style="width: 429.09999999999997px; height: 362.59999999999997px;" /></a>
+<p class="caption"><span class="caption-text">Box <strong>“is an employee”</strong> and <strong>“is manager of leaves”</strong> is checked</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<p>A manager must be an employee.</p>
+<p>An employee manager can make absence requests in lieu of employees.</p>
+<p>He can validate or reject employee absentee requests that he manages.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The management of an employee is dated, which allows to change manager</p>
+<p>or temporarily delegate management to another manager (absences).</p>
+</div>
+<div class="figure align-center" id="id12">
+<img alt="Manager Screen" src="_images/RH_SCR_Manager.png" />
+<p class="caption"><span class="caption-text">Manager Screen</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric">Bulk add for employees managed</p>
+<p>It is possible here to associate the employees with their manager, ie:</p>
+<ul class="simple">
+<li><p><strong>IN MASS</strong> according to criteria of massification</p></li>
+<li><p><strong>UNITAIREMENT</strong> with the list of employees attached to this manager</p></li>
+</ul>
+<p>For example, if the company closes in August …</p>
+<p>The manager can register a request for his organization and under organization, for all the organizations, his entire team,
+himself included</p>
+<p class="rubric">Administrator</p>
+<p>If an employee does not have a manager, the administrator of the Regulated absence module acts as manager.</p>
+<p>The administrator is obligatorily a leave manager</p>
+<div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/RH_ZONE_MenuAdminManager.PNG"><img alt="Employee Menu" src="_images/RH_ZONE_MenuAdminManager.PNG" style="width: 242.89999999999998px; height: 314.29999999999995px;" /></a>
+<p class="caption"><span class="caption-text">Administrator and Leaves Manager menu.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When a resource is no longer <strong>“used”</strong>, all the elements of the Regulated absence module are deleted by the module:</p>
+<ul class="simple">
+<li><p>Assignments to activities associated with type of absence</p></li>
+<li><p>Time spent generated following validated absence requests</p></li>
+<li><p>Planned times generated due to absence requests not yet validated</p></li>
+<li><p>Absence requests</p></li>
+<li><p>Acquired rights</p></li>
+<li><p>Contracts</p></li>
+<li><p>Links with his managers</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="leaves-calendar">
+<span id="index-3"></span><span id="id2"></span><h3>Leaves Calendar<a class="headerlink" href="#leaves-calendar" title="Permalink to this headline">¶</a></h3>
+<p>Regulated absences are done either by the employees or by their manager</p>
+<p>Absences can be recorded from the leaves calendar</p>
+<div class="figure align-center" id="id14">
+<img alt="Leaves calendar" src="_images/RH_SCR_LeavesCalendar.png" />
+<p class="caption"><span class="caption-text">Leaves calendar</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+<p>To record or change your absences, double clicking on an existing date or absence</p>
+<p>A pop up opens to display the properties of an absence (date and type of absence …)</p>
+<div class="figure align-center" id="id15">
+<img alt="Leaves attributs" src="_images/RH_BOX_LeavesAttributs.png" />
+<p class="caption"><span class="caption-text">Leaves attributs</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+<p>After validation, the holiday appears in the calendar.</p>
+<p>The manager (and / or administrator) can validate or not, the leave of the employees.</p>
+<p>The color of the holidays will change according to the validation.</p>
+</div>
+<div class="section" id="leaves-periods">
+<span id="leaves-period"></span><span id="index-4"></span><h3>Leaves Periods<a class="headerlink" href="#leaves-periods" title="Permalink to this headline">¶</a></h3>
+<p>Regulated absences are done either by the employees or by their manager</p>
+<p>Absences can be recorded from the leaves Periods screen</p>
+<div class="figure align-center" id="id16">
+<img alt="Leaves periods" src="_images/RH_SCR_LeavesPeriods.png" />
+<p class="caption"><span class="caption-text">Leaves periods</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+<p>On this screen, you can save, edit, delete a holiday request, as in the holiday calendar.</p>
+<p>The Employee Manager and Administrator can change the status of a holiday (see <a class="reference internal" href="Report.html#report"><span class="std std-ref">Reports</span></a>).</p>
+</div>
+<div class="section" id="leave-rights-earned">
+<span id="leaves-rights-earned"></span><span id="index-5"></span><h3>Leave Rights earned<a class="headerlink" href="#leave-rights-earned" title="Permalink to this headline">¶</a></h3>
+<p>On this screen, you can see your leaves rights earned since your contratc’s beginning.</p>
+<div class="figure align-center" id="id17">
+<img alt="Leaves rights earned" src="_images/RH_SCR_LeavesRightsearned.png" />
+<p class="caption"><span class="caption-text">Leaves rights earned</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<p>The start and end dates correspond to the period on which the days of leave are calculated</p>
+<p>The numbers of the days acquired and remaining</p>
+<p>If your holidays over the reference period and according to the type of leave, then the checkbox “closed” is validated.</p>
+<p>You no longer have this type of holiday available and can not ask any more</p>
+</div>
+<div class="section" id="employment-contract">
+<span id="index-6"></span><span id="id3"></span><h3>Employment contract<a class="headerlink" href="#employment-contract" title="Permalink to this headline">¶</a></h3>
+<p>You can see the details of the contracts and which employee is attached to them</p>
+<div class="figure align-center" id="id18">
+<img alt="Leaves rights earned" src="_images/RH_SCR_EmploymentContract.png" />
+<p class="caption"><span class="caption-text">Leaves rights earned</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="leaves-dashboard">
+<span id="index-7"></span><span id="id4"></span><h3>Leaves Dashboard<a class="headerlink" href="#leaves-dashboard" title="Permalink to this headline">¶</a></h3>
+<p>A dashboard is available to absence managers</p>
+<div class="figure align-center" id="id19">
+<img alt="Leaves Dahsboard" src="_images/RH_SCR_LeavesDashboard.png" />
+<p class="caption"><span class="caption-text">Leaves dashboard</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+<p>The filter bar allows you to filter the information presented in the dashboard</p>
+<div class="figure align-center" id="id20">
+<img alt="Filters" src="_images/RH_ZONE_FilterBar.png" />
+<p class="caption"><span class="caption-text">Filter bar</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+<p>Leaves Calendar displays informations based on filters applied by managed employee</p>
+<p>The <img alt="Susbcribe" src="_images/iconDelay.png" /> tells you that the request was made late</p>
+<p>You can export the calendar into Excel format</p>
+<p class="rubric">Synthesis</p>
+<p>The synthesis is also displayed according to the filters selected beforehand,</p>
+<p>and gives the number of days remaining to be taken by type of leave and managed employees</p>
+<p class="rubric">Leave period to process</p>
+<p>In this section, appears the list of absences to be processed, that is to say under the “recorded” status</p>
+</div>
+<div class="section" id="regulated-leaves-parameters">
+<span id="leaves-parameters"></span><span id="index-8"></span><h3>Regulated leaves parameters<a class="headerlink" href="#regulated-leaves-parameters" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="earned-rights">
+<span id="id5"></span><h4>Earned rights<a class="headerlink" href="#earned-rights" title="Permalink to this headline">¶</a></h4>
+<p>The regulation of absences is based on the rights to take absences acquired over a given period.</p>
+<p>It is therefore based on values to be given to attributes of regulation according to the type of absence (ex: Paid leave, RTT, sick leave, legal leave, etc.), and the type of contract associated with the employee (Ex: Full time, Part time).</p>
+<p class="rubric">General acquisition of rights</p>
+<p>When you create a <a class="reference internal" href="#employment-contract-type"><span class="std std-ref">Employment contract type</span></a> or <a class="reference internal" href="#leaves-types"><span class="std std-ref">Leaves types</span></a>, you have several contractual values to fill in.</p>
+<div class="figure align-center" id="id21">
+<img alt="Contractual values for the leaves type" src="_images/RH_ZONE_LeavesRights.png" />
+<p class="caption"><span class="caption-text">Contractual values for the leaves type</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Check box <strong>“On default”</strong> and <strong>“on everything”</strong></p>
+<ul class="simple">
+<li><p>If you check on <strong>“default”</strong> the entered values will be reflected on the default contract type only.</p></li>
+<li><p>If you check on <strong>“all”</strong> the entered values will be on all contract types.</p></li>
+<li><p>These values can not be changed after they are saved.</p></li>
+</ul>
+<p>For any change, the creation of a new type of absence is necessary.</p>
+</div>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>start month period</p></td>
+<td><p>month starting the reference period of paid holidays in your country.</p></td>
+</tr>
+<tr class="row-odd"><td><p>start day period</p></td>
+<td><p>day starting the reference period of paid holidays in your country.</p></td>
+</tr>
+<tr class="row-even"><td><p>period duration</p></td>
+<td><p>The length of the period gives the number of months over which your reference period will extend.</p></td>
+</tr>
+<tr class="row-odd"><td><p>quantity</p></td>
+<td><p>the number of days of leave that will be paid during the period reference.</p></td>
+</tr>
+<tr class="row-even"><td><p>period of leave rights earned</p></td>
+<td><p>the number of months before you can use your acquired days.</p></td>
+</tr>
+<tr class="row-odd"><td><p>integer <a class="reference internal" href="Glossary.html#term-quotity"><span class="xref std std-term">quotity</span></a></p></td>
+<td><p>Possibility of rounding up earned leave.</p></td>
+</tr>
+<tr class="row-even"><td><p>validity duration</p></td>
+<td><p>period during which the days of leave acquired will be retained. Beyond this period the acquired holidays are lost.</p></td>
+</tr>
+<tr class="row-odd"><td><p>is justiable</p></td>
+<td><p>defines if the absence must be the subject of a request for proof</p></td>
+</tr>
+<tr class="row-even"><td><p>can be anticipated</p></td>
+<td><p>If leave can be taken before the vesting period</p></td>
+</tr>
+<tr class="row-odd"><td><p>max delay for retroactive absence (days)</p></td>
+<td><p>allows, or not, to record absences on paid leave after being actually absent.</p></td>
+</tr>
+<tr class="row-even"><td><p>max delay for anticipated absence (days)</p></td>
+<td><p>Number of days before which an application can be made</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In France, an employee is entitled to 2 and a half days of leave per month of actual work at the same employer,
+wether 5 weeks per full year of work (from June 1st to May 31st)</p>
+</div>
+<p class="rubric">Specific acquisition of rights</p>
+<p>To integrate specific rights of absence, the concept of special rights has been put in place.</p>
+<p>Usable entities are:</p>
+<ul class="simple">
+<li><p>Absences</p></li>
+<li><p>Employees</p></li>
+<li><p>Contracts</p></li>
+<li><p>Acquired rights</p></li>
+</ul>
+<div class="figure align-center" id="id22">
+<img alt="Contractual values for the leaves type" src="_images/RH_BOX_AddSpecialLeaves.png" />
+<p class="caption"><span class="caption-text">Contractual values for the leaves type</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>The name to give to the special right</p></td>
+</tr>
+<tr class="row-odd"><td><p>custom earned rule</p></td>
+<td><p>The rule allowing the calculation of a number of times to apply the quantity of right to absence</p></td>
+</tr>
+<tr class="row-even"><td><p>where clause</p></td>
+<td><p>Condition of application of the special right</p></td>
+</tr>
+<tr class="row-odd"><td><p>Quantity</p></td>
+<td><p>The elementary quantity of the special right</p></td>
+</tr>
+<tr class="row-even"><td><p>Leave type</p></td>
+<td><p>The type of absence to which the special duty applies</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="leaves-types">
+<span id="id6"></span><h4>Leaves types<a class="headerlink" href="#leaves-types" title="Permalink to this headline">¶</a></h4>
+<p>This part allows you to create the types of absences regulated according to the laws of your country.</p>
+<p>A corresponding activity (= name of absence type) is created on the project dedicated to absences management.</p>
+<p>All employees (resource registered as employee) are assigned to this activity</p>
+<div class="figure align-center" id="id23">
+<img alt="creating types of absences" src="_images/RH_SCR_LeavesTypes.png" />
+<p class="caption"><span class="caption-text">Leaves types screen</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+<p>In the details area, you defined the type of absence.</p>
+<p class="rubric">Section treatment</p>
+<p>You can choose the workflow that will be attached to human resources</p>
+<p class="rubric">Section “Send Information…”</p>
+<div class="figure align-center" id="id24">
+<img alt="Send an alert to..." src="_images/RH_ZONE_Alerts.png" />
+<p class="caption"><span class="caption-text">Send an alert to</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+<p>In this section, you can defined who received an internal alert or an email on the creation, the update, the delete and/or the treatment of the leaves</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>More detail about <strong>contractual values</strong>, see <a class="reference internal" href="#earned-rights"><span class="std std-ref">Earned rights</span></a></p>
+</div>
+</div>
+<div class="section" id="employment-contract-type">
+<span id="id7"></span><h4>Employment contract type<a class="headerlink" href="#employment-contract-type" title="Permalink to this headline">¶</a></h4>
+<p>This section allows you to create the different contracts that are in effect in your company</p>
+<p>The types of contracts allow to have rules of acquisition of different regulated absences according to the contract of employment of an employee</p>
+<p>You can only have one type of default contract</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>example in France</strong></p>
+<ul class="simple">
+<li><p>Executive contract = No acquisition rule</p></li>
+<li><p>Full-time frame contract = RTT</p></li>
+<li><p>Part time frame contract = No RTT</p></li>
+<li><p>etc.</p></li>
+</ul>
+</div>
+<div class="figure align-center" id="id25">
+<img alt="Employment contract type" src="_images/RH_SCR_TypesContrats.png" />
+<p class="caption"><span class="caption-text">Screen of Employment contract type</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>More detail about <strong>contractual values</strong>, see <a class="reference internal" href="#earned-rights"><span class="std std-ref">Earned rights</span></a></p>
+</div>
+<p class="rubric">Parameters for earned leave rights</p>
+<ul class="simple">
+<li><p>In this section you can define which types of regulated absences will be attached to this type of contract.</p></li>
+<li><p>If you have created several types of regulated absences and attached them to all your contracts</p></li>
+</ul>
+<blockquote>
+<div><p>(check box <strong>on default</strong> or <strong>on everything</strong>), these types will be visible in this section.</p>
+</div></blockquote>
+<p>If you are missing types of absences, you can create them from this screen:</p>
+<ul class="simple">
+<li><p>Click on the <img alt="Button add" src="_images/ButtonAdd.png" /> button</p></li>
+<li><p>A pop up opens and proposes to fill in the same fields as on the screen of the types of regulated absences</p></li>
+</ul>
+<div class="figure align-center" id="id26">
+<img alt="Special leaves rights" src="_images/RH_BOX_RightsAcquisition.png" />
+<p class="caption"><span class="caption-text">Special leaves rights</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>More detail about <strong>Specific values</strong>, see <a class="reference internal" href="#earned-rights"><span class="std std-ref">Earned rights</span></a></p>
+</div>
+<p class="rubric">Configuration of special leave rights</p>
+<p>Special acquisition rules are rules that can not be expressed with the values of the standard acquisition rules</p>
+<div class="figure align-center" id="id27">
+<img alt="Special leaves rights" src="_images/RH_BOX_AddSpecialLeaves.png" />
+<p class="caption"><span class="caption-text">Special leaves rights</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><strong>custom earned rules:</strong></p>
+<p>Define the special acquisition rule based on the attribute values of a ProjeQtOr entity.</p>
+<p>This rule follows the vocabulary of the SQL language</p>
+<p class="rubric"><strong>where clause</strong></p>
+<p>Condition of application of the special right</p>
+<p>this clause follows the vocabulary of the SQL language</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>for help with the SQL functions you can use, click on the section bar <strong>help on clause input</strong></p>
+<p>A new part appears and proposes drop-down menus with prerecorded SQL queries</p>
+</div>
+<div class="figure align-center" id="id28">
+<img alt="Special Leaves" src="_images/RH_BOX_AddSpecialLeaves+mysql.PNG" />
+<p class="caption"><span class="caption-text">Special Leaves</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric"><strong>Quantity</strong></p>
+<p>Number of additional acquired days calculated following the application of the special acquisition rule</p>
+<p>This rule follows the vocabulary of the SQL language</p>
+<p class="rubric"><strong>Leave type</strong></p>
+<p>The type of regulated absence to which will be attached, the rule of special absence.</p>
+</div>
+<div class="section" id="employment-contract-end-reason">
+<h4>Employment contract end reason<a class="headerlink" href="#employment-contract-end-reason" title="Permalink to this headline">¶</a></h4>
+<p>Allows you to record the different types of end of contract.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Why end a contract?</strong></p>
+<ul class="simple">
+<li><p>Resignation</p></li>
+<li><p>Change of the status (non managment -&gt; management)</p></li>
+<li><p>Change of the quotity (100% -&gt; 80%)</p></li>
+<li><p>Going to retire…</p></li>
+</ul>
+</div>
+<p>These different reasons may lead to changes in the rules governing the acquisition of the rights of absence.</p>
+<div class="figure align-center" id="id29">
+<img alt="Employment contract end reason" src="_images/RH_SCR_ContractEND.png" />
+<p class="caption"><span class="caption-text">Employment contract end reason box</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="leaves-system-habilitation">
+<h4>Leaves System habilitation<a class="headerlink" href="#leaves-system-habilitation" title="Permalink to this headline">¶</a></h4>
+<p>Allows you to restrict or restrict the view of Human Resources module screens to employee profile types.</p>
+<p>They can view - read - create - update and/or delete access</p>
+<div class="figure align-center" id="id30">
+<img alt="Leaves System habilitation" src="_images/RH_SCR_LeavesSystemHabilitation.png" />
+<p class="caption"><span class="caption-text">Leaves System habilitation</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Humans Resources</a><ul>
+<li><a class="reference internal" href="#regulated-absence">Regulated absence</a><ul>
+<li><a class="reference internal" href="#employees-and-manager">Employees and Manager</a></li>
+<li><a class="reference internal" href="#leaves-calendar">Leaves Calendar</a></li>
+<li><a class="reference internal" href="#leaves-periods">Leaves Periods</a></li>
+<li><a class="reference internal" href="#leave-rights-earned">Leave Rights earned</a></li>
+<li><a class="reference internal" href="#employment-contract">Employment contract</a></li>
+<li><a class="reference internal" href="#leaves-dashboard">Leaves Dashboard</a></li>
+<li><a class="reference internal" href="#regulated-leaves-parameters">Regulated leaves parameters</a><ul>
+<li><a class="reference internal" href="#earned-rights">Earned rights</a></li>
+<li><a class="reference internal" href="#leaves-types">Leaves types</a></li>
+<li><a class="reference internal" href="#employment-contract-type">Employment contract type</a></li>
+<li><a class="reference internal" href="#employment-contract-end-reason">Employment contract end reason</a></li>
+<li><a class="reference internal" href="#leaves-system-habilitation">Leaves System habilitation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="TransverseFeatures.html"
+                        title="previous chapter">Activity Stream</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Glossary.html"
+                        title="next chapter">Glossary</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Glossary.html" title="Glossary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="TransverseFeatures.html" title="Activity Stream"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

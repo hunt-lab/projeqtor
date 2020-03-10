@@ -1,0 +1,1183 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Expenses &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Incomes" href="Incomes.html" />
+    <link rel="prev" title="Requirements dashboard" href="RequirementsDashBoard.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Incomes.html" title="Incomes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="RequirementsDashBoard.html" title="Requirements dashboard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="expenses">
+<span id="index-0"></span><span id="id1"></span><h1>Expenses<a class="headerlink" href="#expenses" title="Permalink to this headline">¶</a></h1>
+<p>The expenses incurred for the project are monitored.</p>
+<div class="section" id="budget">
+<span id="index-1"></span><h2>Budget<a class="headerlink" href="#budget" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A budget is a list of all products and different expenses to plan.</p></li>
+<li><p>It is a plan that allows to define in advance the expenses, the incomes and the possible savings to be realized during a definite period.</p></li>
+<li><p>It allows to anticipate the resources that the company will have at a specific moment.</p></li>
+<li><p>You can create as much budget and sub budget as you want.</p></li>
+<li><p>An expense is related to a base budget, ie a budget item</p></li>
+<li><p>A budget item is linked to a parent budget</p></li>
+<li><p>in the same way as the project selector, you can filter, thanks to the “Budget Parent” filter, a budget and “his family” on the list poster.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>The parent budget</strong></p>
+<ul class="simple">
+<li><p>The parent budget exists only to consolidate budget line items</p></li>
+<li><p>You can’t change spending in the Progress field of a parent budget</p></li>
+<li><p>Only the target amount can be changed</p></li>
+</ul>
+<p><strong>The budget item</strong></p>
+<ul class="simple">
+<li><p>The budget items are the finer element of the budget analysis.</p></li>
+<li><p>These posts or budget destinations will allow you to detail your budget, categorizing it at your convenience.</p></li>
+</ul>
+</div>
+<div class="figure align-center" id="id5">
+<img alt="Budget screen" src="_images/EXPENSES_SCREEN_Budget.png" />
+<p class="caption"><span class="caption-text">Budget Screen</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric">Description</p>
+<table class="colwidths-given docutils align-center" id="id6">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the payment</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the payment</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Budget type</p></td>
+<td><p>Type of budget: initial or additional</p></td>
+</tr>
+<tr class="row-odd"><td><p>Budget orientation</p></td>
+<td><p>the orientation of the budget: operation or transformation</p></td>
+</tr>
+<tr class="row-even"><td><p>Budget category</p></td>
+<td><p>subdivision of budget orientation into category</p></td>
+</tr>
+<tr class="row-odd"><td><p>Article number</p></td>
+<td><p>The number of the article</p></td>
+</tr>
+<tr class="row-even"><td><p>Organisation</p></td>
+<td><p>Name of the organisation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Customer Code</p></td>
+<td><p>the code you attribute to your client</p></td>
+</tr>
+<tr class="row-even"><td><p>is sub-budget of</p></td>
+<td><p>if your budget is part of another budget</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sponsor</p></td>
+<td><p>from the budget.
+If your budget comes from grant for example</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Progress</p>
+<div class="figure align-center" id="id7">
+<img alt="Progress Section" src="_images/EXPENSES_ZONE_Progress.png" />
+<p class="caption"><span class="caption-text">Progress Section</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>This section allows to follow the consolidation of all the expenses.</p>
+<p>The target amount is the only amount you can save on a parent budget.</p>
+<p>Other amounts are recovered from the sub-budgets and consolidated on the parent budget.</p>
+<p>Transferred Amount allows to release a sum of an amount planned for a budget item in order to redistribute it to another item.</p>
+<p>This amount is visible on all budget items.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Transfered Amount</strong></p>
+<ul class="simple">
+<li><p>Enter a negative amount on a budget line to transfer an amount</p></li>
+<li><p>Enter a positive amount on a budget line to recover this amount</p></li>
+<li><p>Only the parent budget and its sub budget will see this amount.</p></li>
+<li><p>Another parent budget can not recover this amount.</p></li>
+</ul>
+</div>
+<p class="rubric">Budget expense detail</p>
+<p>This section brings and displays the <a class="reference internal" href="#project-expense"><span class="std std-ref">Project expense</span></a> lines in the details</p>
+<div class="figure align-center" id="id8">
+<img alt="Details lines" src="_images/EXPENSES_ZONE_DetailLine.png" />
+<p class="caption"><span class="caption-text">Details lines</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p class="rubric">Treatment</p>
+<table class="colwidths-given docutils align-center" id="id9">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">Status</span></a></p></td>
+<td><p>change of states according to the <a class="reference internal" href="ControlAutomation.html#workflow"><span class="std std-ref">Workflows</span></a> selected for the type of your budget</p></td>
+</tr>
+<tr class="row-odd"><td><p>is a budget item</p></td>
+<td><p>Self-checked box when the budget becomes a sub-budget</p></td>
+</tr>
+<tr class="row-even"><td><p>Under construction</p></td>
+<td><p>When the budget is validated. The box is unchecked</p></td>
+</tr>
+<tr class="row-odd"><td><p>approved</p></td>
+<td><p>When the box is checked, the target amount is blocked</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Flag to indicate that profile is archived.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Flag to indicate that profile is cancelled.</p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="index-2"></span></div>
+<div class="section" id="call-for-tenders">
+<span id="index-3"></span><span id="id2"></span><h2>Call for tenders<a class="headerlink" href="#call-for-tenders" title="Permalink to this headline">¶</a></h2>
+<p>Call for tenders stores information about your needs to create a submission to call for tenders.</p>
+<p>This can for instance be used to detail all the requests and find the best answer.</p>
+<p>You have the possibility to create some different evaluation criterias. Thereafter you can attribute them a value in Offer.</p>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center" id="id10">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the call for tender</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short name of the call for tender</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Type</p></td>
+<td><p>Type of tender</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>Project link to call for tender</p></td>
+</tr>
+<tr class="row-even"><td><p>Maximum amount</p></td>
+<td><p>Maximum amount of the call for tender</p></td>
+</tr>
+<tr class="row-odd"><td><p>Expected delivery date</p></td>
+<td><p>Date expected</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center" id="id11">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the call for tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Person responsible for the processing of this call for tender.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sent date</p></td>
+<td><p>Sent date of the call for tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Expected answer date</p></td>
+<td><p>Expected answer date, meaning expected tender date.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates that the tender is handled with date when checked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates that the tender is done with date when checked.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the tender is archived with date when checked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates that the tender is cancelled.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Submissions of tenders</p>
+<div class="figure align-center" id="id12">
+<img alt="Submission of tender" src="_images/EXPENSES_ZONE_SubmissionsTender.png" />
+<p class="caption"><span class="caption-text">Submission of tender</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-left">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>Provider of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Contact</p></td>
+<td><p>Contact for the tender.</p></td>
+</tr>
+<tr class="row-even"><td><p>Request date</p></td>
+<td><p>Request date when tender sent with the hour.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Expected answer date</p></td>
+<td><p>Date expected with the hour.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tender status</p></td>
+<td><p>Statut of the tender.</p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="index-4"></span></div>
+<div class="section" id="provider-tenders">
+<span id="tenders"></span><span id="index-5"></span><h2>Provider Tenders<a class="headerlink" href="#provider-tenders" title="Permalink to this headline">¶</a></h2>
+<p>Tenders store information about the responses to the call for tenders that you have submitted.</p>
+<p>This can for instance be used to detail all the tenders and compare them to choose one of them.</p>
+<p>If your call for tenders has evaluation criteria, you can attribute a rating for each criteria.</p>
+<p>Evalutation will display a summary of your criterias with their ratings.</p>
+<p>Global rating will then be displayed on the call for tender for all concerned tenders.</p>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center" id="id13">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short name of the tender.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Type</p></td>
+<td><p>Type of tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>Project link to tender.</p></td>
+</tr>
+<tr class="row-even"><td><p>Call for tender</p></td>
+<td><p>Link to call for tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tender statuts</p></td>
+<td><p>Statut of the tender.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Provider</p></td>
+<td><p>Provider of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>External reference</p></td>
+<td><p>External reference of the tender.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center" id="id14">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">Status</span></a></p></td>
+<td><p>Actual status of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Person responsible for the processing of this tender.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contact</p></td>
+<td><p>Contact of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Request date</p></td>
+<td><p>Resquest date for tender.</p></td>
+</tr>
+<tr class="row-even"><td><p>Expected answer date</p></td>
+<td><p>Expected answer date of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Date of receipt</p></td>
+<td><p>Date of receipt of the tender with the hour.</p></td>
+</tr>
+<tr class="row-even"><td><p>Offer validity</p></td>
+<td><p>Offer validity date.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Initial</p></td>
+<td><p>Price</p></td>
+</tr>
+<tr class="row-even"><td><p>Negotiated</p></td>
+<td><p>Price of negotiated.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Payment conditions</p></td>
+<td><p>Type of payment conditions.</p></td>
+</tr>
+<tr class="row-even"><td><p>Delivery delay</p></td>
+<td><p>Delivery delay of the tender.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Expected delivery date</p></td>
+<td><p>Expected delivery date of the tender.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates that the tender is handled with date when checked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates that the tender is done with date when checked.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the tender is archived with date when checked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates that the tender is cancelled.</p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="index-6"></span></div>
+<div class="section" id="orders-to-provider">
+<span id="order-providers"></span><span id="index-7"></span><h2>Orders to provider<a class="headerlink" href="#orders-to-provider" title="Permalink to this headline">¶</a></h2>
+<p class="rubric">Section Description</p>
+<div class="figure align-center" id="id15">
+<img alt="Order to provider - Description section" src="_images/EXPENSES_ZONE_DescriptionZone.png" />
+<p class="caption"><span class="caption-text">Order to provider - Description section</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id16">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the expense</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the expense</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Order to provider type</p></td>
+<td><p>Type of order: Product and/or Service</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Project</p></td>
+<td><p>The project concerned by the order</p></td>
+</tr>
+<tr class="row-even"><td><p>Sent date</p></td>
+<td><p>date of sending to the supplier</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></p></td>
+<td><p>Element which is the origin of the quotation</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>Name of the provider</p></td>
+</tr>
+<tr class="row-odd"><td><p>External Reference</p></td>
+<td><p>supplier’s reference</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<div class="figure align-center" id="id17">
+<img alt="Order to provider - Treatment section" src="_images/EXPENSES_ZONE_TreatmentOrderProvider.png" />
+<p class="caption"><span class="caption-text">Order to provider - Treatment section</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id18">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Defines the progress of the element’s treatment</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Name of the person in charge of the order</p></td>
+</tr>
+<tr class="row-even"><td><p>Contact</p></td>
+<td><p>Name of the contact related to the order at the supplier</p></td>
+</tr>
+<tr class="row-odd"><td><p>payment conditions</p></td>
+<td><p>description of payment terms</p></td>
+</tr>
+<tr class="row-even"><td><p>Delivery delay</p></td>
+<td><p>from the validation of the order, duration of treatment and preparation of products/services</p></td>
+</tr>
+<tr class="row-odd"><td><p>Delivery date : Planned date</p></td>
+<td><p>Delivery date planned by the supplier</p></td>
+</tr>
+<tr class="row-even"><td><p>Delivery date : Real date</p></td>
+<td><p>Actual delivery date of the supplier</p></td>
+</tr>
+<tr class="row-odd"><td><p>Delivery date : Validated date</p></td>
+<td><p>Delivery date validated with the supplier</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ListsOfValues.html#term-handled-status"><span class="xref std std-term">Handled status</span></a></p></td>
+<td><p>Defines whether ‘handled’ flag is automatically set for this status.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ListsOfValues.html#term-done-status"><span class="xref std std-term">Done status</span></a></p></td>
+<td><p>Defines whether ‘done’ flag is automatically set for this status.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ListsOfValues.html#term-closed-status"><span class="xref std std-term">Closed status</span></a></p></td>
+<td><p>Defines whether ‘closed’ flag is automatically set for this status.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ListsOfValues.html#term-cancelled-status"><span class="xref std std-term">Cancelled status</span></a></p></td>
+<td><p>Defines whether ‘cancelled’ flag is automatically set for this status.</p></td>
+</tr>
+<tr class="row-even"><td><p>Untaxed amount</p></td>
+<td><p>Amount of the order without taxes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tax rate</p></td>
+<td><p>applicable tax rates in your country/region</p></td>
+</tr>
+<tr class="row-even"><td><p>Tax Amount</p></td>
+<td><p>Total amount of taxes calculated based on Taxe rate</p></td>
+</tr>
+<tr class="row-odd"><td><p>Full amount</p></td>
+<td><p>Total amount of the order including taxes</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>you can attach many documents related to your order: The general conditions of sale, the quotation, the order form …</p>
+</div>
+<span class="target" id="index-8"></span></div>
+<div class="section" id="terms-of-payments-to-providers">
+<span id="term-payment"></span><span id="index-9"></span><h2>Terms of payments to providers<a class="headerlink" href="#terms-of-payments-to-providers" title="Permalink to this headline">¶</a></h2>
+<p>In France, inter-company payment periods are regulated and set at maximum 60 calendar days or 45 days end of month
+from the date of issue of the invoice.</p>
+<p>Failing to mention the payment period in the contract or the invoice,
+it is legally fixed to 30 days after receipt of the goods or performance of the service.</p>
+<p>Depending on the sector, deadlines are modifiable</p>
+<p>In this screen, you can save, organize, track and edit your payment dates to your supplier</p>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center" id="id19">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the term of payment</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the term</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Project</p></td>
+<td><p>project attached to the term of payment</p></td>
+</tr>
+<tr class="row-odd"><td><p>Order to provider</p></td>
+<td><p>Name of the order atatched to the term of payment</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider Bill</p></td>
+<td><p>the supplier’s invoice</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Name of the person in charge of the payment</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Fixed price for term</p>
+<table class="colwidths-given docutils align-center" id="id20">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Initial ex VAT</p></td>
+<td><p>Amount before taxes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tax</p></td>
+<td><p>Applicable tax</p></td>
+</tr>
+<tr class="row-even"><td><p>Full</p></td>
+<td><p>Amount with taxes</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Date</p></td>
+<td><p>date of expiry</p></td>
+</tr>
+<tr class="row-even"><td><p>Billed status</p></td>
+<td><p>If payment has been billed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Paid status</p></td>
+<td><p>If payment has been paid</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ListsOfValues.html#term-closed-status"><span class="xref std std-term">Closed status</span></a></p></td>
+<td><p>Defines whether ‘closed’ flag is automatically set for this status.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>Ex VAT:</strong> The column value is automatically updated with the sum of bill line amounts.</p></li>
+<li><p><strong>Tax:</strong> If the tax is not defined, nothing is applied in this field and the amount will remain without tax</p></li>
+<li><p><strong>Full:</strong> If the total amount exclusive of tax and the tax rate have been entered, the total amount will be calculated automatically</p></li>
+<li><p>On the project, the sum of the expenses must be carried out in including taxes if the entry of expenses is in including taxes</p></li>
+</ul>
+</div>
+<span class="target" id="index-10"></span><span class="target" id="index-11"></span></div>
+<div class="section" id="provider-bills">
+<h2>Provider bills<a class="headerlink" href="#provider-bills" title="Permalink to this headline">¶</a></h2>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center" id="id21">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the term of payment</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the term</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Provider <a class="reference internal" href="ListsOfTypes.html#client-bill-type"><span class="std std-ref">Client Bills types</span></a></p></td>
+<td><p>The way to define common behavior on group of bills</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Project</p></td>
+<td><p>project attached to the bill</p></td>
+</tr>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>Date of the bill</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></p></td>
+<td><p>Element which is the origin of the quotation</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>Provider name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> External reference</p></td>
+<td><p><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a> of the provider’s bill</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></p></td>
+<td><p>Complete description of the expense.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center" id="id22">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a></p></td>
+<td><p>Actual status of the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>person placing the order</p></td>
+</tr>
+<tr class="row-even"><td><p>Contact</p></td>
+<td><p>name of the person at the supplier related to this bill</p></td>
+</tr>
+<tr class="row-odd"><td><p>Payment conditions</p></td>
+<td><p>the payment terms of the supplier</p></td>
+</tr>
+<tr class="row-even"><td><p>Payment due date</p></td>
+<td><p>expected payment date</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></p></td>
+<td><p>Box checked indicates that the tender is handled with date when checked.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></p></td>
+<td><p>Box checked indicates that the tender is done with date when checked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the tender is archived with date when checked.</p></td>
+</tr>
+<tr class="row-even"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates that the tender is cancelled.</p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="index-12"></span></div>
+<div class="section" id="payements-to-provider">
+<span id="id3"></span><h2>Payements to provider<a class="headerlink" href="#payements-to-provider" title="Permalink to this headline">¶</a></h2>
+<p>Follow the payment of your supplier invoices to better organize your general cash flow or your working capital</p>
+<p class="rubric">Section Description</p>
+<table class="colwidths-given docutils align-center" id="id23">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the term of payment</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the payment</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Payment to <a class="reference internal" href="ListsOfTypes.html#provider-type"><span class="std std-ref">Providers types</span></a></p></td>
+<td><p>The way to define common behavior on payments to provider</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treament</p>
+<div class="figure align-center" id="id24">
+<img alt="Payment modes" src="_images/EXPENSES_ZONE_TreatmentPayments.PNG" />
+<p class="caption"><span class="caption-text">Payment modes</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id25">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Payment mode</p></td>
+<td><p>groups different payment methods</p></td>
+</tr>
+<tr class="row-odd"><td><p>Payment date</p></td>
+<td><p>the date on which the payment method chosen above will be made</p></td>
+</tr>
+<tr class="row-even"><td><p>payment amount</p></td>
+<td><p>Amount of the bill</p></td>
+</tr>
+<tr class="row-odd"><td><p>Payment fee</p></td>
+<td><p>Fee generated by payment or otherwise</p></td>
+</tr>
+<tr class="row-even"><td><p>payment credit</p></td>
+<td><p>Amount of credit if there is</p></td>
+</tr>
+<tr class="row-odd"><td><p>Provider payment term</p></td>
+<td><p>selection of the payment deadline to the supplier</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider bill</p></td>
+<td><p>selection of the provider bill</p></td>
+</tr>
+<tr class="row-odd"><td><p>Provider bill reference</p></td>
+<td><p>The reference is automatically fill in when selecting the provider bill</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>The name of the provider is automatically fill when selecting the provider bill</p></td>
+</tr>
+<tr class="row-odd"><td><p>Provider bill amount</p></td>
+<td><p>The amount of the bill is automatically fill when selecting the provider bill</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the tender is archived with date when checked.</p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="index-14"></span></div>
+<div class="section" id="individual-expenses">
+<span id="individual-expense"></span><span id="index-15"></span><h2>Individual expenses<a class="headerlink" href="#individual-expenses" title="Permalink to this headline">¶</a></h2>
+<p>An individual expense stores information about individual costs, such as travel costs or else.</p>
+<p>Individual expense has detail listing for all items of expense.</p>
+<p>This can for instance be used to detail all the expense on one month so that each user opens only one individual expense per month (per project), or detail all the elements of a travel expense.</p>
+<p class="rubric">Planned amount</p>
+<p>Planned amount will help to have an overview of project total costs, even before expense is realized.</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#expense-detail-lines"><span class="std std-ref">Expenses detail lines</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#linkelement-section"><span class="std std-ref">Linked element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id26">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id26" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the expense.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Type</p></td>
+<td><p>Type of expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Project</p></td>
+<td><p>The project concerned by the expense.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Resource</p></td>
+<td><p>Resource concerned by the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></p></td>
+<td><p>Complete description of the expense.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center" id="id27">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id27" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Responsible</p></td>
+<td><p>Person responsible for the processing of this expense</p></td>
+</tr>
+<tr class="row-even"><td><p>Planned</p></td>
+<td><p>Planned amount of the expense (Date is mandatory)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Real</p></td>
+<td><p>Real amount of the expense (Date is mandatory)</p></td>
+</tr>
+<tr class="row-even"><td><p>Payment done</p></td>
+<td><p>Box checked indicates the payment is done</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the expense is archived</p></td>
+</tr>
+<tr class="row-even"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates that the expense is cancelled</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Planned &amp; Real</p>
+<ul class="simple">
+<li><p><strong>Full</strong>: Amount.</p>
+<ul>
+<li><p>Real amount is automatically updated with the sum of the amounts of detail lines.</p></li>
+</ul>
+</li>
+<li><p><strong>Payment date</strong>:</p>
+<ul>
+<li><p>For field “Planned” is the planned date.</p></li>
+<li><p>For field “Real” can be the payment date or else.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<span class="target" id="index-16"></span></div>
+<div class="section" id="project-expense">
+<span id="index-17"></span><span id="id4"></span><h2>Project expense<a class="headerlink" href="#project-expense" title="Permalink to this headline">¶</a></h2>
+<p>A project expense stores information about project costs that are not resource costs.</p>
+<p>This can be used for all kinds of project cost :</p>
+<ul class="simple">
+<li><p>Machines (rent or buy).</p></li>
+<li><p>Softwares.</p></li>
+<li><p>Office.</p></li>
+<li><p>Any logistic item.</p></li>
+</ul>
+<p class="rubric">Planned amount</p>
+<p>Planned amount will help to have an overview of project total costs, even before expense is realized.</p>
+<p class="rubric">Section Description</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#expense-detail-lines"><span class="std std-ref">Expenses detail lines</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#linkelement-section"><span class="std std-ref">Linked element</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#attachment-section"><span class="std std-ref">Attachments</span></a></p></li>
+<li><p><a class="reference internal" href="CommonSections.html#note-section"><span class="std std-ref">Notes</span></a></p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center" id="id28">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id28" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></p></td>
+<td><p>Unique Id for the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Short description of the expense</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Type</p></td>
+<td><p>Type of expense: machine or office expense</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Project</p></td>
+<td><p>The project concerned by the expense</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>Provider name</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></p></td>
+<td><p>External reference of the expense</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></p></td>
+<td><p>Element which is the origin of the quotation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Business responsible</p></td>
+<td><p>The person who makes the purchase requisition</p></td>
+</tr>
+<tr class="row-even"><td><p>Financial responsible</p></td>
+<td><p>The person who pays the purchase</p></td>
+</tr>
+<tr class="row-odd"><td><p>Payment conditions</p></td>
+<td><p>Conditions of payment</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></p></td>
+<td><p>Complete description of the expense</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Section Treatment</p>
+<table class="colwidths-given docutils align-center" id="id29">
+<caption><span class="caption-text">Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id29" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Status</p></td>
+<td><p>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Order date</p></td>
+<td><p>Date of the order.</p></td>
+</tr>
+<tr class="row-even"><td><p>Delivery mode</p></td>
+<td><p>Delivery mode for the order.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Delivery delay</p></td>
+<td><p>Delivery delay for the order.</p></td>
+</tr>
+<tr class="row-even"><td><p>Expected delivery date</p></td>
+<td><p>Expected delivery date for the order.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Date of receipt</p></td>
+<td><p>Date of receipt of the order.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></p></td>
+<td><p>Box checked indicates that the expense is archived.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancelled</p></td>
+<td><p>Box checked indicates that the expense is cancelled.</p></td>
+</tr>
+<tr class="row-even"><td><p>Planned</p></td>
+<td><p>Planned amount of the expense (Date is mandatory).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Real</p></td>
+<td><p>Real amount of the expense (Date is mandatory).</p></td>
+</tr>
+<tr class="row-even"><td><p>Payment done</p></td>
+<td><p>Box checked indicates the payment is done.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Result</p></td>
+<td><p>Complete description of the treatment of the expense.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields Planned &amp; Real</p>
+<ul class="simple">
+<li><p><strong>Ex VAT</strong>: Amount without taxes.</p>
+<ul>
+<li><p>Real amount is automatically updated with the sum of the amounts of detail lines.</p></li>
+</ul>
+</li>
+<li><p><strong>Tax</strong>: Applicable tax.</p></li>
+<li><p><strong>Full</strong>: Amount with taxes.</p></li>
+<li><p><strong>Payment date</strong>:</p>
+<ul>
+<li><p>For field “Planned” is the planned date.</p></li>
+<li><p>For field “Real” can be the payment date or else.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="expenses-detail-lines">
+<span id="expense-detail-lines"></span><span id="index-18"></span><h3>Expenses detail lines<a class="headerlink" href="#expenses-detail-lines" title="Permalink to this headline">¶</a></h3>
+<p class="rubric">Section Expenses detail lines</p>
+<p>This section is common to individual and project expenses.</p>
+<p>It allows to enter detail on expense line.</p>
+<div class="topic">
+<p class="topic-title first">Fields: Real amount and date</p>
+<ul class="simple">
+<li><p>When a line is entered, expense real amount is automatically updated to sum of lines amount.</p></li>
+<li><p>Real date is set with the date in the firts detail line.</p></li>
+</ul>
+</div>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>Date of the detail line.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Name</p></td>
+<td><p>Name of the detail line.</p></td>
+</tr>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>Type of expense.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Detail</p></td>
+<td><p>Detail depends on the type of expense.</p></td>
+</tr>
+<tr class="row-even"><td><p>Amount</p></td>
+<td><p>Amount of the detail line.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Detail lines management</p>
+<ul class="simple">
+<li><p>Click on <img alt="Button add" src="_images/ButtonAdd.png" /> to add a detail line.</p></li>
+<li><p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to modify an existing detail line.</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the detail line.</p></li>
+</ul>
+<div class="figure align-center" id="id30">
+<img alt="Dialog box - Expense detail" src="_images/BOX_ExpenseDetail.png" />
+<p class="caption"><span class="caption-text">Expense detail dialog box</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-center" id="id31">
+<caption><span class="caption-text">Fields - Expense detail dialog box - Required field <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id31" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>Date of the detail.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reference</p></td>
+<td><p>External reference.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Name</p></td>
+<td><p>Name of the detail.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><p>Type of expense.</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Required File" src="_images/RequiredFILE.png" /> Amount</p></td>
+<td><p>Amount of the detail.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Date</p>
+<p>This allows to input several items, during several days, for the same expense, to have for instance one expense per travel or per month.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Type</p>
+<p>Depending on type, new fields will appear to help calculate of amount.</p>
+<p>Available types depending on whether individual or project expense.</p>
+<p>See: <a class="reference internal" href="ListsOfTypes.html#expense-detail-type"><span class="std std-ref">Expenses details types</span></a>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Field Amount</p>
+<p>Automatically calculated from fields depending on type.</p>
+<p>May also be input for type “justified expense”.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Expenses</a><ul>
+<li><a class="reference internal" href="#budget">Budget</a></li>
+<li><a class="reference internal" href="#call-for-tenders">Call for tenders</a></li>
+<li><a class="reference internal" href="#provider-tenders">Provider Tenders</a></li>
+<li><a class="reference internal" href="#orders-to-provider">Orders to provider</a></li>
+<li><a class="reference internal" href="#terms-of-payments-to-providers">Terms of payments to providers</a></li>
+<li><a class="reference internal" href="#provider-bills">Provider bills</a></li>
+<li><a class="reference internal" href="#payements-to-provider">Payements to provider</a></li>
+<li><a class="reference internal" href="#individual-expenses">Individual expenses</a></li>
+<li><a class="reference internal" href="#project-expense">Project expense</a><ul>
+<li><a class="reference internal" href="#expenses-detail-lines">Expenses detail lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="RequirementsDashBoard.html"
+                        title="previous chapter">Requirements dashboard</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Incomes.html"
+                        title="next chapter">Incomes</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Incomes.html" title="Incomes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="RequirementsDashBoard.html" title="Requirements dashboard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,407 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Agile Methods &#8212; ProjeQtOr User guide 8.3.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Graphical User Interface" href="Gui.html" />
+    <link rel="prev" title="Concepts" href="Concept.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Gui.html" title="Graphical User Interface"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Concept.html" title="Concepts"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="agile-methods">
+<span id="index-0"></span><span id="id1"></span><h1>Agile Methods<a class="headerlink" href="#agile-methods" title="Permalink to this headline">¶</a></h1>
+<p>Agile methods are groups of practices of piloting and realization of projects.
+They originate from the Agile Manifesto, written in 2001, which uses the term “agile” to refer to multiple existing methods.</p>
+<p>Agile methods are more pragmatic than traditional methods, involve the client as much as possible and allow a great reactivity to his requests. They are based on an iterative, incremental and adaptive development cycle and must respect four fundamental values, based on twelve principles, from which a base of practices, either common or complementary, derives.</p>
+<div class="section" id="kanban">
+<span id="index-1"></span><span id="id2"></span><h2>KanBan<a class="headerlink" href="#kanban" title="Permalink to this headline">¶</a></h2>
+<p>The Kanban methodology comes from the Japanese automotive industry. It was created with the aim of optimizing the production capacity.</p>
+<p>The Kanban method is based on the continuous improvement of production processes to enable lean production management.</p>
+<div class="sidebar">
+<p class="sidebar-title">Other sections</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="RiskIssueManagement.html#action"><span class="std std-ref">Actions</span></a></p></li>
+<li><p><a class="reference internal" href="Steering.html#decision"><span class="std std-ref">Decisions</span></a></p></li>
+<li><p><a class="reference internal" href="Steering.html#question"><span class="std std-ref">Questions</span></a></p></li>
+<li><p><a class="reference internal" href="RequirementsTest.html#requirement"><span class="std std-ref">Requirement</span></a></p></li>
+<li><p><a class="reference internal" href="Ticket.html#ticket"><span class="std std-ref">Ticketing</span></a></p></li>
+</ul>
+</div>
+<div class="figure align-center" id="id3">
+<img alt="Kanban screen" src="_images/AGILE_SCR_Kanban.png" />
+<p class="caption"><span class="caption-text">Kanban Screen</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The Kanban approach is a stock management method that allows you to produce on demand.</p>
+<p>The main objective is to balance production and demand.</p>
+<blockquote>
+<div><p><strong>With Kanban, you can create a new Kanban board for</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>tickets,</p></li>
+<li><p>activities,</p></li>
+<li><p>actions,</p></li>
+<li><p>requirements</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Add / Remove columns to an existing Kanban board</p></li>
+<li><p>Direct update of elements</p></li>
+</ul>
+</div></blockquote>
+<p class="rubric" id="kanban-management">Dashboard management</p>
+<p><strong>The Kanban screen is divided into two parts:</strong></p>
+<p><strong>The configuration of Kanban cards</strong> at the top and <strong>The detail of the Kanban board</strong> selected at the bottom</p>
+<div class="figure align-center" id="id4">
+<img alt="Kanban header area" src="_images/AGILE_ZONE_KanbanTOP.png" />
+<p class="caption"><span class="caption-text">Header area</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="topic">
+<p class="topic-title first">Interface areas:</p>
+<p><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-dropdownlist"><span class="std std-ref">The Drop-down list</span></a></p>
+<p><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-newtable"><span class="std std-ref">Create a new table</span></a></p>
+<p><a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-newcolumn"><span class="std std-ref">Create a new column</span></a></p>
+<p><a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-newelement"><span class="std std-ref">Create a new element</span></a></p>
+<p><a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-restriction"><span class="std std-ref">Fields restriction</span></a></p>
+<p><a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="#kanban-filters"><span class="std std-ref">Kanban filters</span></a></p>
+<p><a class="reference internal" href="_images/seven.png"><img alt="Seven" src="_images/seven.png" style="width: 18.0px; height: 18.0px;" /></a> <a class="reference internal" href="Gui.html#info-bar"><span class="std std-ref">Info bar</span></a></p>
+</div>
+<blockquote id="kanban-dropdownlist">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> The Drop-down list</p>
+<p class="compound-middle">You can see the complete list of created tables by clicking on the Kanbans drop-down list in the My Kanbans section.</p>
+<p class="compound-middle">The icon used for kanban tables created corresponds to the type of elements selected.</p>
+<p class="compound-middle">You can see the shared kanban tables by others users on the shared Kanbans section.</p>
+<img alt="Add a new kanban table" class="compound-middle" src="_images/AGILE_BOX_ListOfKanban.png" />
+<ul class="compound-last simple">
+<li><p>Click on <img alt="Button icon copy" src="_images/buttonIconCopy.png" /> to copy this kanban</p></li>
+<li><p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to edit this kanban</p></li>
+<li><p>Click on <img alt="shared filter" src="_images/shared.png" /> to share this kanban</p></li>
+<li><p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete this kanban</p></li>
+</ul>
+</div>
+</div></blockquote>
+<blockquote id="kanban-newtable">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> Create a new table</p>
+<p class="compound-middle">When using kanban for the first time, a kanban map is created for the current user.</p>
+<p class="compound-middle">It’s a kanban of tickets where the columns are based on the status.</p>
+<ul class="compound-middle simple">
+<li><p>Click on <img alt="add new Kanban" src="_images/iconKanbanAdd.png" /> to create a new Kanban</p></li>
+</ul>
+<img alt="Add a new kanban table" class="compound-middle" src="_images/AGILE_BOX_NewKanban.png" />
+<p class="compound-middle"><strong>You will need to define:</strong></p>
+<ul class="compound-middle simple">
+<li><p><strong>Name</strong> for the new Kanban board</p></li>
+<li><p><strong>Type of item:</strong> you can define a Kanban of Tickets, Activities, Actions or Requirements</p></li>
+</ul>
+<p class="compound-middle"><strong>When you have selected the item type, you must then define the type of Kanban board to apply:</strong></p>
+<ul class="compound-middle simple">
+<li><p><strong>Status:</strong> you will manage the most standard “status based” kanban board</p></li>
+<li><p><strong>Target product version:</strong> you can distribute the tickets among the target product version</p></li>
+<li><p><strong>Planning activity:</strong> You will be able to send tickets among planning activities, which can be your Sprints in the Scrum method.</p></li>
+</ul>
+<div class="compound-middle admonition seealso">
+<p class="admonition-title">See also</p>
+<p>See <a class="reference internal" href="Ticket.html#planning-activity"><span class="std std-ref">Planning activity</span></a> on the tickets screen</p>
+</div>
+<p class="compound-middle">and you can choose directly if you want to share the newly created kanban with other users so that they can use it.</p>
+<p class="compound-last">Each time you access the Kanban screen, the last selected Kanban map is displayed.</p>
+</div>
+</div></blockquote>
+<blockquote id="kanban-shared">
+<div><div class="compound">
+<p class="compound-first">Shared a kanban</p>
+<p class="compound-middle">When you share a Kanban, other users will see your share in the list of shared Kanbans.</p>
+<div class="compound-last figure align-center" id="id5">
+<img alt="Shared Kanbans list" src="_images/AGILE_BOX_SharedKanban.png" />
+<p class="caption"><span class="caption-text">Shared Kanbans List</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div></blockquote>
+<blockquote id="kanban-newcolumn">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> Create a new Column</p>
+<p class="compound-middle">By default, when you create a new Kanban table, it gets a single column.</p>
+<p class="compound-middle">This column groups all the statuses for the Kanban “status” board and is set to “undefined” for Kanban “target product version” and “planning activity” cards</p>
+<ul class="compound-middle simple">
+<li><p>Click on <img alt="add Column" src="_images/iconKanbanAddColumns.png" /> to create a new Column</p></li>
+</ul>
+<p class="compound-middle">The pop up is different depending on the type of kanban board created beforehand.</p>
+<blockquote class="compound-last">
+<div><div class="figure align-center" id="id6">
+<img alt="Add a new column into your kanban table" src="_images/AGILE_BOX_NewColumnStatus.png" />
+<p class="caption"><span class="caption-text">New column Status for Ticket, Activity, Action and Requirement</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id7">
+<img alt="Add a new column into your kanban table" src="_images/AGILE_BOX_NewColumnTarget.png" />
+<p class="caption"><span class="caption-text">New column Target product version for Ticket, Activity and Requirement</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id8">
+<img alt="Add a new column into your kanban table" src="_images/AGILE_BOX_NewColumnPlanning.PNG" />
+<p class="caption"><span class="caption-text">New column Planning activity for Tickets and Activity</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p>In the case of a status arrangement, the columns contain items from one status to another in the order of presence of your workflow.</p>
+<p>The next column will show the next status following your workflow to the last or the status you have determined.</p>
+<div class="figure align-center" id="id9">
+<img alt="Columns arrangement by status" src="_images/AGILE_ZONE_Status.png" />
+<p class="caption"><span class="caption-text">Columns arrangement by status</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id10">
+<img alt="Columns arrangement by status" src="_images/AGILE_ZONE_HeaderColumn.png" />
+<p class="caption"><span class="caption-text">Details header column</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<p>Each column indicates the number of elements contained in.</p>
+<p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to edit the column name.</p>
+</div></blockquote>
+</div>
+</div></blockquote>
+<blockquote id="kanban-newelement">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a> Create a new element</p>
+<p class="compound-middle">The creation button change depending on the type of the element selected.</p>
+<blockquote class="compound-last">
+<div><p>Click on <img alt="add ticket" src="_images/iconAddTicket.png" /> to add a new ticket into the Kanban Board or</p>
+<p>Click on <img alt="add Action" src="_images/iconKanbanAddAction.png" /> to add a new action into the Kanban Board or</p>
+<p>Click on <img alt="add Activity" src="_images/iconAddActivity.png" /> to add a new activity into the Kanban Board or</p>
+<p>Click on <img alt="add Requirement" src="_images/iconKanbanAddRequirement.png" /> to add a new action into the Kanban Board</p>
+</div></blockquote>
+</div>
+</div></blockquote>
+<blockquote id="kanban-restriction">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a> Fields restriction</p>
+<p class="compound-middle">As with other ProjeQtOr screens, you can restrict the display of items in the created columns of your kanban.</p>
+<p class="compound-last">You can restrict items by name, manager, version, and sort them by ID, name, manager, status, or target version product.</p>
+</div>
+</div></blockquote>
+<blockquote id="kanban-filters">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a> Advanced filters</p>
+<p class="compound-middle">Click the icon to set an advanced filter.</p>
+<p class="compound-middle">The advanced filter is used to define a clause to filter and sort</p>
+<p class="compound-middle">for more information on advanced filters</p>
+<p class="compound-last">see: <a class="reference internal" href="Gui.html#advanced-filter"><span class="std std-ref">Advanced filters in Graphic User Interface</span></a></p>
+</div>
+</div></blockquote>
+<blockquote id="kanban-showhide">
+<div><div class="compound">
+<p class="compound-first"><a class="reference internal" href="_images/seven.png"><img alt="Seven" src="_images/seven.png" style="width: 18.0px; height: 18.0px;" /></a> Show / Hide informations</p>
+<img alt="Show/Hide additionals informations" class="compound-middle" src="_images/AGILE_ZONE_ShowHide.PNG" />
+<div class="compound-middle compound">
+<p class="compound-first">Show work on elements</p>
+<div class="compound-middle figure align-center">
+<img alt="Work on element" src="_images/AGILE_ZONE_WorkElement.png" />
+</div>
+<p class="compound-middle">You can view the work information of items on each column.</p>
+<p class="compound-middle">The estimated work, actual work, and work remaining information on the selected item can be displayed</p>
+<p class="compound-middle">If your profile is not allowed to see the job, you will not have access to this option.</p>
+<p class="compound-middle">The format for displaying the job (days or hours) depends on the overall configuration:</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li><p><strong>unit for real work allocation</strong> for Tickets</p></li>
+<li><p><strong>unit for workload</strong> for Activities</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="compound-middle compound">
+<p class="compound-first">Show closed items</p>
+<p class="compound-last">You switch to archive mode. You can view the closed elements.</p>
+</div>
+<div class="compound-last compound">
+<p class="compound-first">Show large element</p>
+<div class="compound-last figure align-center" id="id11">
+<img alt="Large kanban" src="_images/AGILE_ZONE_LargeKanban.png" />
+<p class="caption"><span class="caption-text">Wide kanban board display</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div></blockquote>
+<p class="rubric">Element management</p>
+<p>Find below the details of the tiles of your kanbans</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Details of an element</p>
+<div class="compound-middle figure align-center">
+<img alt="_images/AGILE_ZONE_TileKanban.png" src="_images/AGILE_ZONE_TileKanban.png" />
+</div>
+<p class="compound-middle"><a class="reference internal" href="_images/one.png"><img alt="One" src="_images/one.png" style="width: 18.0px; height: 18.0px;" /></a> ID of the element with in the background the project color</p>
+<p class="compound-middle"><a class="reference internal" href="_images/two.png"><img alt="Two" src="_images/two.png" style="width: 18.0px; height: 18.0px;" /></a> The type of the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/three.png"><img alt="Three" src="_images/three.png" style="width: 18.0px; height: 18.0px;" /></a> The name of the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/four.png"><img alt="Four" src="_images/four.png" style="width: 18.0px; height: 18.0px;" /></a> The stastus of the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/five.png"><img alt="Five" src="_images/five.png" style="width: 18.0px; height: 18.0px;" /></a> The target product version</p>
+<p class="compound-middle"><a class="reference internal" href="_images/six.png"><img alt="Six" src="_images/six.png" style="width: 18.0px; height: 18.0px;" /></a> The planning activity or parent activity related to the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/seven.png"><img alt="Seven" src="_images/seven.png" style="width: 18.0px; height: 18.0px;" /></a> The description of the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/eight.png"><img alt="Eight" src="_images/eight.png" style="width: 18.0px; height: 18.0px;" /></a> Estimated work | Real work | Left work</p>
+<p class="compound-middle"><a class="reference internal" href="_images/nine.png"><img alt="Nine" src="_images/nine.png" style="width: 18.0px; height: 18.0px;" /></a> Photo and name of the person in charge of the element when passing the mouse</p>
+<p class="compound-middle"><a class="reference internal" href="_images/ten.png"><img alt="Ten" src="_images/ten.png" style="width: 18.0px; height: 18.0px;" /></a> Priority of the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/eleven.png"><img alt="Eleven" src="_images/eleven.png" style="width: 17.7px; height: 17.7px;" /></a> Add a commentary on the element</p>
+<p class="compound-middle"><a class="reference internal" href="_images/twelve.png"><img alt="Twelve" src="_images/twelve.png" style="width: 17.7px; height: 17.7px;" /></a> Edit the element</p>
+<p class="compound-last"><a class="reference internal" href="_images/thirteen.png"><img alt="Twelve" src="_images/thirteen.png" style="width: 17.7px; height: 17.7px;" /></a> Go to the element screen</p>
+</div>
+<div class="compound">
+<p class="compound-first">Edit an element</p>
+<p class="compound-middle">Click on <img alt="button icon search" src="_images/buttonIconSearch.png" /> to edit directly the element.</p>
+<div class="compound-last figure align-center">
+<img alt="Edit an element" src="_images/AGILE_BOX_EditKanban.png" />
+</div>
+</div>
+<div class="compound">
+<p class="compound-first">Moves an element</p>
+<p class="compound-middle">To move tickets, activities, or anything else from your kanban, drag and drop a ticket into the corresponding column.</p>
+<div class="compound-middle figure align-center" id="id12">
+<img alt="Move an element" src="_images/AGILE_ZONE_DragDrop.png" />
+<p class="caption"><span class="caption-text">Move an element</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<p class="compound-middle">The heading of the moved element then changes to green when it is on a column where the movement is allowed and is red when it is on a column where the movement is prohibited.</p>
+<p class="compound-middle">If the Kanban is arranged as statuses, the new status after move, will be the first status of the range defined for the column.</p>
+<p class="compound-last">For Kanbans based on the target product version and planning activities, the new field value will simply be the target.</p>
+</div>
+<div class="compound">
+<p class="compound-first">forbidden moves</p>
+<p class="compound-middle">Displacements will change the value of the corresponding field for the moved element.</p>
+<p class="compound-middle">But the “status” change must respect the workflow configuration for the given item type. This is why some movements are prohibited.</p>
+<p class="compound-last">Permitted moves are easily identified from prohibited moves by the color of the Ticket header or the moved Activity.</p>
+</div>
+<div class="compound">
+<p class="compound-first">updating</p>
+<p class="compound-middle">Depending on the configuration of the ticket type, some state changes may require the definition of new fields.</p>
+<p class="compound-middle">For example, in the default configuration, when changing to the “assigned” state, “responsible” is required, and when transitioning to the “terminated” state, “result” is required “.</p>
+<p class="compound-last">In this case, when you move a ticket in the Kanban columns, a pop-up window appears to allow you to enter the missing value if it is not already defined.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="live-meeting">
+<span id="live-meeting-agile"></span><span id="index-2"></span><h2>Live Meeting<a class="headerlink" href="#live-meeting" title="Permalink to this headline">¶</a></h2>
+<p><strong>With LiveMeeting you can manage meetings in an agile way:</strong></p>
+<ul class="simple">
+<li><p>Manage minutes of meetings quickly</p></li>
+<li><p>Automatically share the time between all participants</p></li>
+<li><p>Dynamically measure the speaking time of each participant</p></li>
+<li><p>Easily write minutes while assistants speak</p></li>
+<li><p>Easily manage actions / decisions / questions while writing minutes</p></li>
+<li><p>Manage tickets, activities, actions and requirements with Kanban while writing minutes.</p></li>
+</ul>
+<p><strong>A new button is present in the meeting screen:</strong></p>
+<div class="figure align-center" id="id13">
+<img alt="The LiveMeeting button" src="_images/AGILE_ZONE_LiveMeeting-Button.png" />
+<p class="caption"><span class="caption-text">The Live Meeting button</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>Click this button to access the Live Meeting Management screen.</p>
+<div class="figure align-center" id="id14">
+<img alt="The LiveMeeting screen" src="_images/AGILE_SCR_LiveMeeting.PNG" />
+<p class="caption"><span class="caption-text">The Live Meeting screen</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Click on <img alt="button quit multiple update mode" src="_images/buttonQuit.png" /> to exit the LiveMeeting screen</p></li>
+<li><p>Click on <a class="reference internal" href="_images/iconKanban.png"><img alt="Kanban" src="_images/iconKanban.png" style="width: 22.4px; height: 22.4px;" /></a> to manage your kanbans since the livemeeting</p></li>
+<li><p>Click on <img alt="Button icon save" src="_images/buttonIconSave.png" /> to save the live meeting report</p></li>
+<li><p>Click on <a class="reference internal" href="_images/meetingPlay.png"><img alt="LiveMeeting Play" src="_images/meetingPlay.png" style="width: 19.2px; height: 19.2px;" /></a> to start the meeting and to start decrementing the speaking time</p></li>
+<li><p>Click on <a class="reference internal" href="_images/meetingStop.png"><img alt="LiveMeeting Stop" src="_images/meetingStop.png" style="width: 19.2px; height: 19.2px;" /></a> To stop the meeting and therefore close the LiveMeeting window to return to the current meeting screen</p></li>
+<li><p>Click on <a class="reference internal" href="_images/meetingPause.png"><img alt="LiveMeeting Pause" src="_images/meetingPause.png" style="width: 18.599999999999998px; height: 19.2px;" /></a> to pause the speaker’s time</p></li>
+<li><p>Click on <img alt="LiveMeeting can't speak" src="_images/iconLiveMeetingCantSpeak.png" /> to prevent a speaker from speaking</p></li>
+<li><p>Click on <img alt="LiveMeeting speak" src="_images/iconLiveMeetingNormal.png" /> to give him the floor again</p></li>
+<li><p>Click on <img alt="LiveMeeting speak" src="_images/iconLiveMeetingNormal.png" /> twice to design an organizer and to get the icon <img alt="Meeting organizer" src="_images/iconLiveMeetingOrganizator.png" /></p></li>
+</ul>
+<p>You can also manage the action, decisions and the questions that will be linked to your meeting / project</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Find all the information about <a class="reference internal" href="Steering.html#live-meeting-steering"><span class="std std-ref">Live Meeting</span></a> in the section <a class="reference internal" href="Steering.html#steering-page"><span class="std std-ref">Steering</span></a> in the meeting section</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Agile Methods</a><ul>
+<li><a class="reference internal" href="#kanban">KanBan</a></li>
+<li><a class="reference internal" href="#live-meeting">Live Meeting</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Concept.html"
+                        title="previous chapter">Concepts</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Gui.html"
+                        title="next chapter">Graphical User Interface</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Gui.html" title="Graphical User Interface"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Concept.html" title="Concepts"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.3.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

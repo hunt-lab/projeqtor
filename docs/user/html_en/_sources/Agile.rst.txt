@@ -1,0 +1,455 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Agile Methods
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Agile Methods
+
+.. _Agile-Methods:
+
+*************
+Agile Methods
+*************
+
+Agile methods are groups of practices of piloting and realization of projects. 
+They originate from the Agile Manifesto, written in 2001, which uses the term "agile" to refer to multiple existing methods.
+
+Agile methods are more pragmatic than traditional methods, involve the client as much as possible and allow a great reactivity to his requests. They are based on an iterative, incremental and adaptive development cycle and must respect four fundamental values, based on twelve principles, from which a base of practices, either common or complementary, derives.
+
+.. index:: Kanban
+
+.. _Kanban:
+
+KanBan
+******
+
+
+The Kanban methodology comes from the Japanese automotive industry. It was created with the aim of optimizing the production capacity.
+
+The Kanban method is based on the continuous improvement of production processes to enable lean production management.
+
+.. sidebar:: Other sections
+
+   * :ref:`Actions<action>`
+   
+   * :ref:`Decisions<decision>`
+   
+   * :ref:`Questions<question>`
+   
+   * :ref:`Requirement<requirement>`
+   
+   * :ref:`Ticketing<ticket>`
+   
+      
+.. figure:: /images/GUI/AGILE_SCR_Kanban.png
+   :alt: Kanban screen
+      
+   Kanban Screen
+   
+
+The Kanban approach is a stock management method that allows you to produce on demand.
+
+The main objective is to balance production and demand.
+
+
+   **With Kanban, you can create a new Kanban board for**
+   
+      * tickets,
+      * activities,
+      * actions,
+      * requirements
+   
+   * Add / Remove columns to an existing Kanban board
+   
+   * Direct update of elements
+   
+
+   
+.. _kanban-management:
+
+.. rubric:: Dashboard management
+ 
+**The Kanban screen is divided into two parts:**
+ 
+**The configuration of Kanban cards** at the top and **The detail of the Kanban board** selected at the bottom
+ 
+.. figure:: /images/GUI/AGILE_ZONE_KanbanTOP.png
+   :alt: Kanban header area
+             
+   Header area
+   
+   
+         
+.. topic:: Interface areas:
+
+   |one| :ref:`The Drop-down list<kanban-dropdownlist>`
+   
+   |two| :ref:`Create a new table<kanban-newtable>` 
+   
+   |three| :ref:`Create a new column<kanban-newcolumn>`
+   
+   |four| :ref:`Create a new element<kanban-newelement>`
+   
+   |five| :ref:`Fields restriction<kanban-restriction>` 
+   
+   |six| :ref:`Kanban filters<kanban-filters>` 
+   
+   |seven| :ref:`info-bar`
+
+
+
+
+
+
+.. _kanban-dropdownlist:
+
+ .. compound:: |one| The Drop-down list
+ 
+  You can see the complete list of created tables by clicking on the Kanbans drop-down list in the My Kanbans section.
+  
+  The icon used for kanban tables created corresponds to the type of elements selected.   
+  
+  You can see the shared kanban tables by others users on the shared Kanbans section.
+    
+     
+  .. image:: /images/GUI/AGILE_BOX_ListOfKanban.png
+   :alt: Add a new kanban table    
+    
+  * Click on |buttonIconCopy| to copy this kanban
+  * Click on |buttonEdit| to edit this kanban
+  * Click on |sharedFilter| to share this kanban    
+  * Click on |buttonIconDelete| to delete this kanban 
+  
+  
+  
+    
+        
+.. _kanban-newtable:
+
+ .. compound:: |two| Create a new table
+ 
+  When using kanban for the first time, a kanban map is created for the current user. 
+ 
+  It's a kanban of tickets where the columns are based on the status.
+
+  * Click on |addKanban| to create a new Kanban
+ 
+  .. image:: /images/GUI/AGILE_BOX_NewKanban.png
+   :alt: Add a new kanban table  
+      
+  **You will need to define:**
+ 
+  * **Name** for the new Kanban board
+      
+  * **Type of item:** you can define a Kanban of Tickets, Activities, Actions or Requirements
+      
+      
+  **When you have selected the item type, you must then define the type of Kanban board to apply:**
+            
+  * **Status:** you will manage the most standard "status based" kanban board
+  * **Target product version:** you can distribute the tickets among the target product version
+  * **Planning activity:** You will be able to send tickets among planning activities, which can be your Sprints in the Scrum method.
+  
+  .. seealso:: See :ref:`planning-activity` on the tickets screen
+    
+    
+    
+  and you can choose directly if you want to share the newly created kanban with other users so that they can use it.
+      
+  Each time you access the Kanban screen, the last selected Kanban map is displayed.   
+ 
+ 
+.. _kanban-shared:
+       
+ .. compound::  Shared a kanban
+        
+   When you share a Kanban, other users will see your share in the list of shared Kanbans.
+  
+   .. figure:: /images/GUI/AGILE_BOX_SharedKanban.png
+    :alt: Shared Kanbans list
+   
+    Shared Kanbans List
+
+
+
+
+
+
+      
+.. _kanban-newcolumn:
+      
+ .. compound:: |three| Create a new Column
+
+  By default, when you create a new Kanban table, it gets a single column.
+  
+  This column groups all the statuses for the Kanban "status" board and is set to "undefined" for Kanban "target product version" and "planning activity" cards
+  
+  
+  * Click on |addColumnKanban| to create a new Column 
+  
+  The pop up is different depending on the type of kanban board created beforehand.
+ 
+   .. figure:: /images/GUI/AGILE_BOX_NewColumnStatus.png
+     :alt: Add a new column into your kanban table
+     
+     New column Status for Ticket, Activity, Action and Requirement
+     
+   
+   .. figure:: /images/GUI/AGILE_BOX_NewColumnTarget.png
+     :alt: Add a new column into your kanban table  
+     
+     New column Target product version for Ticket, Activity and Requirement
+     
+   
+   .. figure:: /images/GUI/AGILE_BOX_NewColumnPlanning.PNG
+     :alt: Add a new column into your kanban table  
+     
+     New column Planning activity for Tickets and Activity
+     
+     
+        
+     
+   In the case of a status arrangement, the columns contain items from one status to another in the order of presence of your workflow.
+   
+   The next column will show the next status following your workflow to the last or the status you have determined.  
+   
+   .. figure:: /images/GUI/AGILE_ZONE_Status.png
+      :alt: Columns arrangement by status
+      
+      Columns arrangement by status
+      
+      
+   .. figure:: /images/GUI/AGILE_ZONE_HeaderColumn.png
+      :alt: Columns arrangement by status
+      
+      Details header column
+            
+      
+   Each column indicates the number of elements contained in.
+   
+   Click on |buttonEdit| to edit the column name.
+   
+   
+   
+   
+   
+
+   
+.. _kanban-newelement:          
+            
+ .. compound::  |four| Create a new element
+ 
+  The creation button change depending on the type of the element selected.
+ 
+   Click on |addTicketKanban| to add a new ticket into the Kanban Board or
+  
+   Click on |addActionKanban| to add a new action into the Kanban Board or
+  
+   Click on |addActivityKanban| to add a new activity into the Kanban Board or
+  
+   Click on |addRequirementKanban| to add a new action into the Kanban Board
+  
+
+
+.. _kanban-restriction:          
+            
+ .. compound::  |five| Fields restriction
+
+   As with other ProjeQtOr screens, you can restrict the display of items in the created columns of your kanban.
+
+   You can restrict items by name, manager, version, and sort them by ID, name, manager, status, or target version product.
+   
+   
+   
+.. _kanban-filters:          
+            
+ .. compound::  |six| Advanced filters
+
+   Click the icon to set an advanced filter.
+
+   The advanced filter is used to define a clause to filter and sort
+
+   for more information on advanced filters
+   
+   see: :ref:`Advanced filters in Graphic User Interface<advanced-filter>`
+
+
+
+.. _kanban-showhide:          
+            
+ .. compound::  |seven| Show / Hide informations
+   
+  .. image:: /images/GUI/AGILE_ZONE_ShowHide.PNG
+   :alt: Show/Hide additionals informations
+   
+   
+  .. compound:: Show work on elements
+       
+   .. figure:: /images/GUI/AGILE_ZONE_WorkElement.png
+    :alt: Work on element
+         
+   You can view the work information of items on each column.
+         
+   The estimated work, actual work, and work remaining information on the selected item can be displayed
+   
+   If your profile is not allowed to see the job, you will not have access to this option.
+   
+   The format for displaying the job (days or hours) depends on the overall configuration:
+   
+      * **unit for real work allocation** for Tickets
+      * **unit for workload** for Activities
+
+       
+  .. compound:: Show closed items
+  
+   You switch to archive mode. You can view the closed elements.     
+       
+       
+  .. compound:: Show large element
+  
+   .. figure:: /images/GUI/AGILE_ZONE_LargeKanban.png
+    :alt: Large kanban
+    
+    Wide kanban board display
+
+
+.. rubric:: Element management
+
+Find below the details of the tiles of your kanbans
+
+
+ .. compound:: Details of an element
+ 
+  .. figure:: /images/GUI/AGILE_ZONE_TileKanban.png
+  
+  |one| ID of the element with in the background the project color
+  
+  |two| The type of the element
+  
+  |three| The name of the element
+  
+  |four| The stastus of the element
+  
+  |five| The target product version
+  
+  |six| The planning activity or parent activity related to the element
+  
+  |seven| The description of the element
+  
+  |eight| Estimated work | Real work | Left work
+  
+  |nine| Photo and name of the person in charge of the element when passing the mouse
+  
+  |ten| Priority of the element
+  
+  |eleven| Add a commentary on the element
+  
+  |twelve| Edit the element
+  
+  |thirteen| Go to the element screen
+  
+
+ .. compound:: Edit an element
+ 
+  Click on |buttonIconSearch| to edit directly the element.
+
+  .. figure:: /images/GUI/AGILE_BOX_EditKanban.png
+    :alt: Edit an element
+    
+    
+      
+ .. compound:: Moves an element
+ 
+  To move tickets, activities, or anything else from your kanban, drag and drop a ticket into the corresponding column.
+
+  .. figure:: /images/GUI/AGILE_ZONE_DragDrop.png
+    :alt: Move an element
+   
+    Move an element
+
+  The heading of the moved element then changes to green when it is on a column where the movement is allowed and is red when it is on a column where the movement is prohibited.
+
+  If the Kanban is arranged as statuses, the new status after move, will be the first status of the range defined for the column.
+
+  For Kanbans based on the target product version and planning activities, the new field value will simply be the target.
+
+
+ .. compound:: forbidden moves
+ 
+  Displacements will change the value of the corresponding field for the moved element.
+  
+  But the "status" change must respect the workflow configuration for the given item type. This is why some movements are prohibited.
+  
+  Permitted moves are easily identified from prohibited moves by the color of the Ticket header or the moved Activity.  
+  
+  
+ .. compound:: updating
+ 
+  Depending on the configuration of the ticket type, some state changes may require the definition of new fields.
+
+  For example, in the default configuration, when changing to the "assigned" state, "responsible" is required, and when transitioning to the "terminated" state, "result" is required ".
+
+  In this case, when you move a ticket in the Kanban columns, a pop-up window appears to allow you to enter the missing value if it is not already defined.      
+       
+
+
+
+
+
+
+
+
+.. index:: Live Meeting
+
+.. _Live-meeting-Agile:
+
+Live Meeting
+************
+
+
+**With LiveMeeting you can manage meetings in an agile way:**
+
+* Manage minutes of meetings quickly
+
+* Automatically share the time between all participants
+
+* Dynamically measure the speaking time of each participant
+
+* Easily write minutes while assistants speak
+
+* Easily manage actions / decisions / questions while writing minutes
+
+* Manage tickets, activities, actions and requirements with Kanban while writing minutes.
+
+
+**A new button is present in the meeting screen:**
+
+.. figure:: /images/GUI/AGILE_ZONE_LiveMeeting-Button.png
+   :alt: The LiveMeeting button
+   
+   The Live Meeting button
+
+Click this button to access the Live Meeting Management screen.
+
+.. figure:: /images/GUI/AGILE_SCR_LiveMeeting.PNG
+   :alt: The LiveMeeting screen
+   
+   The Live Meeting screen
+
+* Click on |buttonQuit| to exit the LiveMeeting screen
+* Click on |iconKanban| to manage your kanbans since the livemeeting
+* Click on |buttonIconSave| to save the live meeting report
+* Click on |meetingPlay| to start the meeting and to start decrementing the speaking time
+* Click on |meetingStop| To stop the meeting and therefore close the LiveMeeting window to return to the current meeting screen
+* Click on |meetingPause| to pause the speaker's time
+* Click on |LiveMeetingDtSpeak| to prevent a speaker from speaking
+* Click on |LiveMeetingSpeak| to give him the floor again
+* Click on |LiveMeetingSpeak| twice to design an organizer and to get the icon |meetingOrganizer| 
+
+ 
+You can also manage the action, decisions and the questions that will be linked to your meeting / project
+
+.. seealso:: Find all the information about :ref:`Live Meeting<live-meeting-steering>` in the section :ref:`Steering<steering-page>` in the meeting section

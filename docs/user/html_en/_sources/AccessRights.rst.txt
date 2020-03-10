@@ -1,0 +1,421 @@
+.. include:: ImageReplacement.txt
+
+.. index:: Access rights
+
+.. _Acces_Right:
+
+Access Rights
+*************
+
+This section allows the fine management of the rights as well as the management of the modules
+
+.. index:: Module Management
+
+.. _Module_Management:
+
+Module Management
+-----------------
+
+The Module Management allows to choose the module(s) that will appear in the interface.
+
+This enables or disables a consistent group of features.
+
+This screen is then accessible via a dedicated menu in the Acces Right
+
+.. image:: /images/GUI/ACCESSRIGHT_ManagementModule.png
+
+.. topic:: columns descriptions
+
+   .. compound:: * **first column:** The module's name
+   .. compound:: * **second column:** The list of screens that will be displayed if the module is installed.
+   .. compound:: * **third column:** The module's description
+
+**you can choose to install or not:**
+
+* the planning section 
+* the ticketing
+* the time tracking
+* the requirements
+* the financial section with expenses and / or incomes
+* the risks
+* the meetings
+* the steering 
+* the products configuration (versions, components...)
+* the humans resources
+* the external documents management 
+* the organizations (level society) management 
+* the activity stream
+* and the notifications.
+
+.. note:: 
+   Each module can be installed independently.
+   
+   Each module is described and explained on ProjeQtor
+
+.. index:: Profile (Access Rights)
+
+.. _profiles: 
+
+Profiles
+--------
+
+.. sidebar:: Concepts 
+
+   * :ref:`profiles-definition`
+
+The profile is an entitlement group, each with specific access rights to the database.
+
+So, each user is linked to a profile which defines the data they can see and possibly manage. 
+
+.. figure:: /images/GUI/ACCESSRIGHT_SCR_Profiles.png 
+   :alt: Profiles screen
+   :align: center
+   
+   Profiles screen
+
+.. rubric:: Value of Field "Name"
+
+* The value of field "Name" is not the name displayed, but it is a code in the translation table. 
+* The name displayed at right of the field is the translated name.
+
+when the new profile is created, it appears in the list of existing profiles in the list box.
+It remains between square brackets because it does not exist in :ref:`translatable-name`. 
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_ProfilesDescription.png
+   :alt: Profile description with translatable name
+   :align: center
+   
+   Profile description with translatable name
+   
+.. topic:: New profile
+
+   .. image:: /images/GUI/ACCESSRIGHT_ZONE_NewProfil.png
+      :align: center
+      
+   The value of field "Name" must be a significant name and must not contain spaces or special characters.
+   
+   Ideally, the value of the field should start with "profile" (to be easily identified in the translation table).
+
+The restriction zone offers two types of restriction.
+One by type based on ProjeQtOr elements (actions, activities, invoices, catalog ...) 
+and the other based on the restriction of product versions
+
+
+.. sidebar:: Other sections
+
+   * :ref:`Types restrictions<type-restriction-section>`
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required Field
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the profile.
+   * - |RequiredField| Name
+     - Name of the profile.
+   * - Profile code
+     - A code that may be internally used when generating emails and alerts.
+   * - |RequiredField| Sort order
+     - Number to define order of display in lists.
+   * - :term:`Closed`
+     - Flag to indicate that profile is archived.
+   * - Description
+     - Complete description of the profile.
+
+
+.. topic:: Field Profile code
+
+   * **ADM:** will designate administrator.
+   * **PL:** will designate project leader. 
+
+.. index:: Access mode
+
+.. _access-mode:
+
+Access modes
+------------
+
+The access mode defines a combination of rights to Created, Read, Update or Delete items. 
+
+It's the CRUD RIGHTS
+
+Each access is defined as scope of visible and/or updatable, that can be, by kind of elements:
+
+* **No element:** No element is visible and updatable.
+* **Own elements:** Only the elements created by the user.
+* **Elements he is responsible for:** Only the elements the user is responsible for.
+* **Elements of own project:** Only the elements of the projects the user/resource is allocated to.
+* **All elements on all projects:** All elements, whatever the project.
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_AccessModeList.png 
+   :alt: Access modes screen
+   :align: center 
+   
+   Access modes screen
+
+.. rubric:: Value of Field "Name"
+
+* The value of field "Name"  is not the name displayed, but it is a code in the translation table. 
+* The name displayed at right of the field is the translated name.
+* See: :ref:`translatable-name`.
+
+.. topic:: New access mode
+
+   * The value of field "Name" must be a significant name 
+   
+     and must not contain spaces or special characters.
+     
+   * Ideally, the value of the field should start with "accessProfile" 
+     
+     (to be easily identified in the translation table).
+
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_CreateNewMode.png
+   :alt: Create a new profile
+   
+   Create a new profile
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required Field 
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the access mode.
+   * - |RequiredField| Name
+     - Name of the access mode.
+   * - |RequiredField| Read rights
+     - Scope of visible items
+   * - |RequiredField| Create rights
+     - Scope of possibility to create items.
+   * - |RequiredField| Update rights
+     - Scope of updatable items.
+   * - |RequiredField| Delete rights
+     - Scope of deletable items.
+   * - Sort order
+     - Number to define order of display in lists
+   * - :term:`Closed`
+     - Flag to indicate that access mode is archived.
+   * - Description
+     - Complete description of the access mode.
+
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Access to form
+
+.. _access-to-forms:
+
+Access to forms
+---------------
+
+This table is used to define the access to the selected screen for each profile.
+Users belonging to one profile can see the corresponding screen if authorized or not. 
+
+**Click on checkbox to permit or revoke access to the screen for a profile.**
+
+.. figure:: /images/GUI/ACCESSRIGHT_SCR_AccesTOforms.png
+   :alt: Access to forms screen
+   :align: center
+   
+   Access to forms screen
+
+.. index:: Access to reports
+
+.. _access-to-reports:
+
+Access to reports
+-----------------
+
+This screen allows to define report access for each profile.
+Users belonging to a profile can see the corresponding report in the report list.
+Reports are grouped by report categories
+
+**Click on checkbox to permit or revoke access to the report  for a profile.**
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_AccessToReports.png
+   :alt: Access to reports screen
+   :align: center
+   
+   Access to reports screen
+
+.. index:: Access to data 
+
+Access to data
+--------------
+
+.. index:: Access to data (Project dependant)
+
+.. _access-mode-to-data-project-dependant:
+
+Project dependant
+=================
+
+This screen allows to set element access mode for each profile.
+Allows to define scope of visibility  and/or updating of data in elements for users and resources.
+This screen is only for the elements reliant on a project.
+
+**For each element, selected the access mode granted to a profile.**
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_AccessToDataProjectDependant.png
+   :alt: Access to data (Project dependant) screen
+   :align: center
+   
+   Access to data (Project dependant) screen
+
+.. index:: Access to data (No project dependant)
+
+.. _access-mode-to-data-not-project-dependant:
+
+Not project dependant
+=====================
+
+This screen allows to set for each profile, elements access rights.
+Allows to grant access rights (read only or write) to users, to data on specific elements.
+This screen is only for the elements not reliant on a project.
+
+**For each element, select the access rights granted to a profile.**
+
+.. figure:: /images/GUI/ACCESSRIGHT_ZONE_AccessToDataNotProjectDependant.png
+   :alt: Access to data (Not project dependant) screen
+   :align: center
+   
+   Access to data (Not project dependant) screen
+
+.. index:: Specific Access 
+
+.. _specific_access:
+
+Specific access
+---------------
+
+This screen groups specific functionalities options.
+Users belonging to a profile can have access to the application specific functions.
+Depending on options of functionality, allows to grant access rights, to define data visibility  or to enable or disable option.
+
+**For each option, select the access granted to a profile.**
+
+.. figure:: /images/GUI/ACCESSRIGHT_SCR_SpecificAccess.png 
+   :alt: Specific access screen
+   :align: center
+   
+   Specific access screen
+   
+.. rubric:: SECTIONS
+
+.. rubric:: Access to resource data
+
+This section allows to:
+
+* Defines who will be able to see and update “real work” for other users.
+* Defines who can validate weekly work for resource.
+* Defines who have access on diary for resources.
+* Defines who, as a resource, can subscribe to survey for users. 
+
+.. note:: Validate real work: in most cases, it is devoted to project leader.
+
+.. rubric:: Work and Cost visibility
+
+* This section defines for each profile the scope of visibility of work and cost data.
+
+.. rubric:: Assignment management
+
+* This section defines the visibility and the possibility to edit assignments (on activities or else).
+
+.. index:: Checklist (Access rights)
+
+.. rubric:: Display specific buttons
+
+* This section defines whether some button, checklist, job list will be displayed or not (if defined).
+
+   .. compound:: **Display of combo detail button**
+
+    * This option defines for each profile whether the button |buttonIconSearch| will be displayed or not, facing every combo list box.
+    * Through this button, it is possible to select an item and create a new item.
+    * This button may also be hidden depending on access rights (if the user has no read access to corresponding elements).
+
+   .. compound:: **Multiple update**
+
+    * Defines the possibility or not to change one or more criteria for one or more selected rows at a time
+
+.. rubric:: Planning access rights
+
+* This section defines access for each profile to planning functionality.
+
+.. rubric:: Unlock items
+
+* This section defines for each profile the ability to unlock any document or requirement.
+* Otherwise, each user can only unlock the documents and requirements locked by himself.
+
+.. rubric:: Reports
+
+* This section defines for each profile the ability to change the resource parameter in reports.
+
+.. rubric:: Specific update rights
+
+* Defines for each profile the ability to force delete items.
+* Defines for each profile the ability to force close items.
+* Defines for each profile the ability to update creation information.
+* Defines for each profile the ability to mention or not the components on a ticket.
+
+
+.. rubric:: Limit visibilty to resources
+
+* By profil, allows to restrict or not the number of resources displayed, by organizations or own team, on resource lists.
+* By profil, allows to restrict or not the number of resources displayed, by organizations or own team, on resource screen.
+
+.. rubric:: Limit visibility to organizations
+
+* By profil, allows to restrict or not the number of organizations displayed, by organizations or own organization, on organization lists.
+* By profil, allows to restrict or not the number of organizations displayed, by organizations or own organization, on organization screen.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Translatable name
+
+.. _translatable-name:
+
+Translatable name
+-----------------
+
+For profiles and access modes, the value of field "Name" is translatable.
+
+The field "Name" in screens :ref:`profiles` and :ref:`access-mode` is not the name displayed, but it is a code in the translation table. 
+
+The name displayed at right of the field is the translated name.
+
+The translated name depends on user language selected in :ref:`User parameters<display-parameters>` screen.
+
+.. note::
+
+   If translated name is displayed between square brackets [ ], then the value of field "Name" is not found in the translation table.
+
+.. rubric:: Translation table files
+
+* In ProjeQtOr, a translation table file is defined for each available language.
+* The files are named "lang.js" and are localized in a directory named with ISO language code.
+
+  * For instance: ../tool/i18n/nls/fr/lang.js.
+
+
+.. rubric:: How to modify the translation file?
+
+* You can edit  file "lang.js" to add translation of new value or to modify the existing value translation.
+* Or, you can download Excel file named "lang.xls", available on ProjeQtOr site. You can modify the translation tables of all languages and produce  files "lang.js".
+
+
+
+
+
+
